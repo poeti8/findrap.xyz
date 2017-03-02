@@ -1,0 +1,23 @@
+{
+  "name": "hip-hop",
+  "version": "1.0.0",
+  "description": "Discover dope hip-hop music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poeti8/hip-hop.git"
+  },
+  "keywords": [
+    "hip-hop",
+    "rap"
+  ],
+  "author": "Pouria Ezzati",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/poeti8/hip-hop/issues"
+  },
+  "homepage": "https://github.com/poeti8/hip-hop#readme"
+}
