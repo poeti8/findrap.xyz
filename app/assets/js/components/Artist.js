@@ -214,7 +214,6 @@ class Artist extends React.Component {
             
             axios.get(`/api${path}?random=true`, {responseType: 'json'})
             .then(res => {
-                console.log(res);
                 this.setState({
                     artists: res.data.data,
                     index: 0,
