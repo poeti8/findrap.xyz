@@ -1,0 +1,18 @@
+<svg width="29" height="30" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon-Close</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(692 -30)" figma:type="canvas">
+<g id="Icon-Close" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Fill-16" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-691.657 30.842)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Fill-17" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-691.657 30.842)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 1.314 27.316L -5.24521e-09 26L 26 7.62939e-09L 27.314 1.316L 1.314 27.316Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 26 27.316L -5.24521e-09 1.316L 1.314 7.62939e-09L 27.314 26L 26 27.316Z"/>
+</defs>
+</svg>

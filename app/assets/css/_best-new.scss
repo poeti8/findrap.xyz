@@ -1,0 +1,24 @@
+.best-new-wrap {
+    @extend .media-wrap;
+    justify-content: center;
+    align-items: center;
+    flex: .5;
+    margin: 0 auto;
+   
+    a {
+        @include transition(all .2s $ease);
+        
+        h1 {
+            font-size: 7rem;
+            line-height: 1.1;
+        }
+        
+        &:hover {
+            margin-left: -1em;
+        }
+    }
+}
+
+.best-new-item {
+    @extend .top10-item;
+}

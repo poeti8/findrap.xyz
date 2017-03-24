@@ -1,0 +1,147 @@
+#menu-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba($sec-color, .95);
+    z-index: 9999;
+    @include transition(all .3s ease);
+    transform: translate(100%, -100%) scale(0.2, 0.2);
+    
+    &.active {
+        transform: translate(0, 0) scale(1, 1);
+    }
+    
+    ul {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            padding: 0;
+            margin-bottom: 3em;
+            
+            a {
+                font-weight: 800;
+                font-size: 6em;
+                letter-spacing: -.05em;
+                
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+#menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 6vw;
+    height: 4vw;
+    z-index: 9999;
+    
+    a.open {
+        display: block;
+    }
+
+    a.close {
+        display: none;
+    }
+    
+    &.active {
+        a.open {
+            display: none;
+        }
+        
+        a.close {
+            display: block;
+        }
+    }
+    
+    
+    a {
+        font-weight: 800;
+        font-size: .9em;
+        letter-spacing: -.02em;
+        text-transform: uppercase;
+        opacity: .9;
+        @include transition(all .1s $ease);
+        
+        img {
+            box-sizing: content-box;
+            display: inline-block;
+            padding: .5em;
+            height: 1.3em;
+            width: auto;
+            margin-left: .5em;
+            margin-bottom: -1px; 
+        }
+        
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1, 1.1) translate(-.1px, -.1px);
+        }
+    }
+}
+
+a.nav-next {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 7vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(black, .2), transparent);
+    z-index: 9;
+    
+    img {
+        width: 12%;
+        height: auto;
+        margin-right: 1.5em;
+        opacity: .4;
+        @include transition(all .3s $ease);
+    }
+    
+    &:hover {
+        background: linear-gradient(to left, rgba(black, .8), transparent);
+    }
+    
+    &:hover img {
+        transform: scale(1.1, 1.1);
+        opacity: .8;
+    }
+}
+
+a.nav-prev {
+    @extend a.nav-next;
+    justify-content: flex-start;
+    left: 0;
+    background: linear-gradient(to right, rgba(black, .2), transparent);
+    
+    img {
+        width: 12%;
+        margin: 0 0 0 1.5em;
+        transform: rotate(180deg);
+    }
+    
+    &:hover img {
+        transform: rotate(180deg) scale(1.1, 1.1);
+    }
+    
+    &:hover {
+        background: linear-gradient(to right, rgba(black, .8), transparent);
+    }
+}

@@ -1,0 +1,28 @@
+[
+    {
+	"artist": "Pink Guy",
+	"album": {
+		"name": "Pink Season",
+		"spotify": "0xwxoALWTPNBxB6Xq9Fy66",
+		"itunes": "id282855712",
+		"googleplay": "Bhk233rb7jxn7kgcwyzvtpiltvi",
+		"amazon": "B00000JG2O"
+	}
+    }, {
+	"artist": "Run The Jewels",
+	"album": {
+		"name": "RTJ3",
+		"spotify": "fffffffff",
+		"googleplay": "Bhk233rb7jxn7kgcwyzvtpiltvi",
+		"amazon": "B00000JG2O"
+	}
+    }, {
+	"artist": "2Pac",
+	"album": {
+		"name": "All Eyez On Me",
+		"spotify": "fffffffff",
+		"googleplay": "Bhk233rb7jxn7kgcwyzvtpiltvi",
+		"amazon": "B00000JG2O"
+	}
+    }
+]

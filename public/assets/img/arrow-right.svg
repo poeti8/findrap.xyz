@@ -1,0 +1,14 @@
+<svg width="12" height="21" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon-Chevron-Right</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(782 -134)" figma:type="canvas">
+<g id="Icon-Chevron-Right" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Fill-34" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-781.707 134.793)" fill="#fff" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 1.414 19.414L 1.26362e-08 18L 8.293 9.707L 1.26362e-08 1.414L 1.414 1.26362e-08L 11.121 9.707L 1.414 19.414Z"/>
+</defs>
+</svg>

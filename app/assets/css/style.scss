@@ -1,0 +1,15 @@
+$main-font: 'Raleway';
+$sec-font: 'Inconsolata';
+$font-size: 16px;
+$prim-color: #E91034;
+$sec-color: #1044E9;
+$ease: cubic-bezier(0.25,-0.07, 0.31, 1.31);
+
+@import 'reset';
+@import 'general';
+@import 'homepage';
+@import 'artist';
+@import 'top10';
+@import 'best-new';
+@import 'menu';
+@import 'react-animations';

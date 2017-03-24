@@ -1,0 +1,209 @@
+
+.blue-overlay-right {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: $sec-color;
+}
+
+.find {
+    .blue-overlay-right {
+       @include skewX(0); 
+    }
+}
+
+.find-appear.blue-overlay-right {
+    width: 100%;
+}
+
+.find-appear.find-appear-active.blue-overlay-right {
+    transition: all 1.2s ease .1s;
+    width: 0;
+}
+
+.intro-appear {
+    transform: translateX(-20%);
+    opacity: 0.01;
+}
+
+.intro-appear.intro-appear-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+
+.stores-enter {
+    transform: scale(.5, .5) translateY(-300%);
+    opacity: 0.01;
+}
+
+.stores-enter.stores-enter-active {
+    transform: scale(1, 1) translateY(0);
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.stores-leave.stores-leave-active {
+    transform: scale(.5, .5) translateY(-300%);
+    opacity: 0.01;
+    transition: all .5s ease;
+}
+
+.media-enter:after {
+    transform: translateZ(0) translateX(0) !important;
+}
+
+.media-enter.media-enter-active:after {
+    transform: translateZ(0) translateX(100%) !important;
+    transition: transform .5s ease 1s;
+}
+
+.media-leave {
+    z-index: 999 !important;
+}
+
+.media-leave:after {
+    transform: translateZ(0) translateX(-100%) !important;
+}
+
+.media-leave.media-leave-active:after {
+    transform: translateZ(0) translateX(0) !important;
+    transition: transform 1s ease;
+}
+
+.artist-enter {
+    opacity: 0;
+    transform: translateZ(0) translateX(-10%) !important;
+}
+
+.artist-enter.artist-enter-active {
+    opacity: 1;
+    transform: translateZ(0) translateX(0) !important;
+    transition: all .8s ease;
+}
+
+.artist-leave {
+    position: absolute;
+    align-self: center;
+    left: 0;
+    opacity: 1;
+    transform: translateZ(0) translateX(0) !important;
+}
+
+.artist-leave.artist-leave-active {
+    opacity: 0;
+    transform: translateZ(0) translateX(-10%) !important;
+    transition: all .8s ease;
+}
+
+.artist-wrapper-appear.artist {
+    opacity: 0;
+    transform: translateZ(0) translateX(-10%) !important;
+}
+
+.artist-wrapper-appear.artist-wrapper-appear-active.artist {
+    opacity: 1;
+    transform: translateZ(0) translateX(0) !important;
+    transition: all 1s ease;
+}
+
+.artist-wrapper-appear.artist {
+    opacity: 0;
+    transform: translateZ(0) translateX(-10%) !important;
+}
+
+.artist-wrapper-appear.artist-wrapper-appear-active.artist {
+    opacity: 1;
+    transform: translateZ(0) translateX(0) !important;
+    transition: all 1.5s ease;
+}
+
+.artist-wrapper-appear .media > *:after {
+    transform: translateZ(0) translateX(0) !important;
+}
+
+.artist-wrapper-appear.artist-wrapper-appear-active .media > *:after {
+    transform: translateZ(0) translateX(100%) !important;
+    transition: transform 1.5s ease;
+}
+
+.bestnew-wrapper-appear {
+    opacity: 0.01;
+}
+
+.bestnew-wrapper-appear.bestnew-wrapper-appear-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.bestnew-wrapper-enter {
+    opacity: 0.01;
+}
+
+.bestnew-wrapper-enter.bestnew-wrapper-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.top10-item-enter {
+    opacity: 0;
+    transform: translateZ(0) translateX(-10%) !important;
+}
+
+.top10-item-enter.top10-item-enter-active {
+    opacity: 1;
+    transform: translateZ(0) translateX(0) !important;
+    transition: all .8s ease;
+}
+
+.top10-item-leave {
+    position: absolute;
+    align-self: center;
+    left: 0;
+    opacity: 1;
+    transform: translateZ(0) translateX(0) !important;
+}
+
+.top10-item-leave.top10-item-leave-active {
+    opacity: 0;
+    transform: translateZ(0) translateX(-10%) !important;
+    transition: all .8s ease;
+}
+
+.top10-intro-appear {
+    opacity: 0.01;
+}
+
+.top10-intro-appear.top10-intro-appear-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.top10s-enter {
+    opacity: 0.01;
+}
+
+.top10s-enter.top10s-enter-active {
+    opacity: 1;
+    transition: opacity .5s ease .1s;
+}
+
+.top10s-leave {
+    position: absolute;
+    opacity: 1;
+}
+
+.top10s-leave.top10s-leave-active {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.top10-appear {
+    opacity: 0.01;
+}
+
+.top10-appear.top10-appear-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}

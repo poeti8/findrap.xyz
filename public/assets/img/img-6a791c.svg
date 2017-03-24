@@ -1,0 +1,18 @@
+<svg width="10" height="10" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon-Tag</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(994 -181)" figma:type="canvas">
+<g id="Icon-Tag" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Fill-129" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-993.087 181.5)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Fill-130" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-976.93 185.57)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 12.087 28.086C 11.231 28.086 10.427 27.754 9.824 27.151L 0.936 18.263C -0.312 17.015 -0.312 14.985 0.936 13.737L 12.824 1.849C 13.861 0.812 15.821 0 17.287 0L 24.887 0C 26.651 0 28.087 1.435 28.087 3.2L 28.087 10.8C 28.087 12.266 27.275 14.226 26.238 15.263L 14.35 27.151C 13.747 27.754 12.943 28.086 12.087 28.086ZM 17.287 2C 16.336 2 14.911 2.59 14.238 3.263L 2.35 15.151C 1.882 15.619 1.882 16.381 2.35 16.849L 11.238 25.737C 11.689 26.186 12.485 26.186 12.936 25.737L 24.824 13.849C 25.497 13.176 26.087 11.751 26.087 10.8L 26.087 3.2C 26.087 2.539 25.548 2 24.887 2L 17.287 2Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 3.93 7.86C 1.763 7.86 -3.05176e-07 6.097 -3.05176e-07 3.93C -3.05176e-07 1.763 1.763 1.71661e-07 3.93 1.71661e-07C 6.097 1.71661e-07 7.86 1.763 7.86 3.93C 7.86 6.097 6.097 7.86 3.93 7.86ZM 3.93 1.86C 2.788 1.86 1.86 2.788 1.86 3.93C 1.86 5.072 2.788 6 3.93 6C 5.072 6 6 5.072 6 3.93C 6 2.788 5.072 1.86 3.93 1.86Z"/>
+</defs>
+</svg>
