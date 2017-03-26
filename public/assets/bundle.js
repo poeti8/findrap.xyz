@@ -13416,7 +13416,6 @@ var Artist = function (_React$Component) {
                 var path = location.pathname;
 
                 _axios2.default.get('/api' + path + '?random=true', { responseType: 'json' }).then(function (res) {
-                    console.log(res);
                     _this5.setState({
                         artists: res.data.data,
                         index: 0,

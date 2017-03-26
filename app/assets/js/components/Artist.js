@@ -22,45 +22,45 @@ class Artist extends React.Component {
             img: '',
             youtube: '',
             stores: {
-                    spotify: '',
-                    itunes: '',
-                    googleplay: '',
-                    amazon: ''
+                spotify: '',
+                itunes: '',
+                googleplay: '',
+                amazon: ''
             }
         }
         this.changeArtist = this.changeArtist.bind(this);
         this.updateMedia = this.updateMedia.bind(this);
         this.goToTag = this.goToTag.bind(this);
     }
-    
+
     componentWillMount() {
         const page = this.props.match.params.page;
         const name = this.props.match.params.name;
-        
-        axios.get(`/api/${page}/${name}?similar=true&random=true`, {responseType: 'json'})
-        .then(res => {
-            this.setState({
-               artists: res.data.data,
-               img: res.data.data[0].artist,
-               loading: false
+
+        axios.get(`/api/${page}/${name}?similar=true&random=true`, { responseType: 'json' })
+            .then(res => {
+                this.setState({
+                    artists: res.data.data,
+                    img: res.data.data[0].artist,
+                    loading: false
+                });
+            })
+            .catch(err => {
+                this.props.history.push('/404');
             });
-        })
-        .catch(err => {
-            this.props.history.push('/404');
-        });
     }
-    
+
     updateMedia(e) {
         e.preventDefault();
         if (this.state.clickable === false) return;
-        
+
         const links = document.querySelectorAll('a');
         Array.prototype.forEach.call(links, item => {
             item.classList.remove('active');
         });
-        
+
         e.target.classList.add('active');
-        
+
         let item;
         let media;
         let img;
@@ -72,7 +72,7 @@ class Artist extends React.Component {
             media = 'img';
             img = item.name;
         }
-        
+
         this.setState({
             clickable: false,
             media: media,
@@ -85,24 +85,24 @@ class Artist extends React.Component {
                 amazon: item.amazon || ''
             }
         });
-        
+
         const clickable = setTimeout(() => {
             this.setState({
                 clickable: true
             });
         }, 1700);
     }
-    
+
     goToTag(e) {
         e.preventDefault();
         const tag = e.target.innerHTML;
         this.props.history.push(e.target.getAttribute('href'));
-        
+
         this.setState({
             clickable: false
         });
     }
-    
+
     changeArtist(e) {
         e.preventDefault();
         if (this.state.clickable === false) return;
@@ -119,117 +119,117 @@ class Artist extends React.Component {
                 img: this.state.artists[this.state.index - 1].artist
             });
         }
-        
+
         this.setState({
             clickable: false,
             media: 'img',
             youtube: '',
             stores: {
-               spotify: '',
+                spotify: '',
                 itunes: '',
                 googleplay: '',
-                amazon: '' 
-            } 
+                amazon: ''
+            }
         });
-        
+
         const clickable = setTimeout(() => {
             this.setState({
                 clickable: true
             });
         }, 1700);
     }
-    
+
     render() {
         if (this.state.loading === true) return null;
 
-        return (    
-        <ReactCSSTransitionGroup className="wrapper" 
-                                 component="section"
-                                 transitionName="artist-wrapper"
-                                 transitionAppear={true}
-                                 transitionAppearTimeout={1500}
-                                 transitionEnter={false}
-                                 transitionLeave={false}>
+        return (
+            <ReactCSSTransitionGroup className="wrapper"
+                component="section"
+                transitionName="artist-wrapper"
+                transitionAppear={true}
+                transitionAppearTimeout={1500}
+                transitionEnter={false}
+                transitionLeave={false}>
 
-            <Menu history={this.props.history} />
- 
-            <Nav changeArtist={this.changeArtist} 
-                 index={this.state.index} 
-                 artists={this.state.artists} />
-            
-            <Media stores={this.state.stores} 
-                   media={this.state.media} 
-                   img={this.state.img}
-                   youtube={this.state.youtube} />
+                <Menu history={this.props.history} />
 
-            <ReactCSSTransitionGroup className="artist"
-                                     component="section" 
-                                     transitionName="artist"
-                                     transitionEnterTimeout={1000}
-                                     transitionLeaveTimeout={1000}>
-                                     
-                <div key={this.state.artists[this.state.index].artist.toLowerCase().replace(/ /g, '-')} className="artist-info">
-                    <h2>
-                        {this.state.artists[this.state.index].artist}
-                    </h2>
-                    
-                    <div className="lists">
-                        <ArtistLists type="songs"
-                                     artists={this.state.artists}
-                                     index={this.state.index}
-                                     updateMedia={this.updateMedia}/>
-                                    
-                        
-                        <ArtistLists type="albums"
-                                     artists={this.state.artists}
-                                     index={this.state.index}
-                                     updateMedia={this.updateMedia}/>              
-                    </div>
-                    
-                    <ArtistTags artists={this.state.artists}
+                <Nav changeArtist={this.changeArtist}
+                    index={this.state.index}
+                    artists={this.state.artists} />
+
+                <Media stores={this.state.stores}
+                    media={this.state.media}
+                    img={this.state.img}
+                    youtube={this.state.youtube} />
+
+                <ReactCSSTransitionGroup className="artist"
+                    component="section"
+                    transitionName="artist"
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}>
+
+                    <div key={this.state.artists[this.state.index].artist.toLowerCase().replace(/ /g, '-')} className="artist-info">
+                        <h2>
+                            {this.state.artists[this.state.index].artist}
+                        </h2>
+
+                        <div className="lists">
+                            <ArtistLists type="songs"
+                                artists={this.state.artists}
                                 index={this.state.index}
-                                goToTag={this.goToTag}/>
-                </div>
+                                updateMedia={this.updateMedia} />
+
+
+                            <ArtistLists type="albums"
+                                artists={this.state.artists}
+                                index={this.state.index}
+                                updateMedia={this.updateMedia} />
+                        </div>
+
+                        <ArtistTags artists={this.state.artists}
+                            index={this.state.index}
+                            goToTag={this.goToTag} />
+                    </div>
+                </ReactCSSTransitionGroup>
             </ReactCSSTransitionGroup>
-        </ReactCSSTransitionGroup>
         )
     }
-    
+
     componentDidMount() {
         if (this.state.loading === true) {
             let interval = setInterval(() => {
                 if (this.state.loading === false) {
                     custom.moveElements();
-                    custom.toggleMenu();  
+                    custom.toggleMenu();
                     clearInterval(interval);
                 }
-            }, 500);  
+            }, 500);
         } else {
             custom.moveElements();
             custom.toggleMenu();
         }
-        
+
         this.props.history.listen(location => {
             const path = location.pathname;
-            
-            axios.get(`/api${path}?random=true`, {responseType: 'json'})
-            .then(res => {
-                this.setState({
-                    artists: res.data.data,
-                    index: 0,
-                    clickable: true,
-                    media: 'img',
-                    img: res.data.data[0].artist,
-                    youtube: '',
-                    stores: {
-                        spotify: '',
-                        itunes: '',
-                        googleplay: '',
-                        amazon: ''  
-                    }  
+
+            axios.get(`/api${path}?random=true`, { responseType: 'json' })
+                .then(res => {
+                    this.setState({
+                        artists: res.data.data,
+                        index: 0,
+                        clickable: true,
+                        media: 'img',
+                        img: res.data.data[0].artist,
+                        youtube: '',
+                        stores: {
+                            spotify: '',
+                            itunes: '',
+                            googleplay: '',
+                            amazon: ''
+                        }
+                    });
                 });
-            }); 
-        });  
+        });
     }
 }
 

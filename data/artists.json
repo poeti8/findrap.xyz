@@ -231,7 +231,7 @@
 		"amazon": "B01N3RS7V7"
 	}],
 	"tags": ["1990s", "2010s", "east-coast", "jazz", "alternative"],
-	"related": ["Q-Tip", "Busta Rhymes", "Jungle Brothers", "De La Soul", "Large Professor", "J Dilla"]
+	"related": ["Q-Tip", "Jungle Brothers", "De La Soul", "Digable Planets", "Busta Rhymes", "Large Professor", "J Dilla"]
 }, {
 	"artist": "A$AP Rocky",
     "songs": [{
@@ -419,7 +419,7 @@
 		"amazon": "B01BHMFCWK"
 	}],
 	"tags": ["2000s", "2010s", "alternative", "underground"],
-	"related": ["El-P", "Mr. Lif", "Cage"]
+	"related": ["El-P", "Mr. Lif", "Cage", "Deltron 3030", "Run The Jewels"]
 }, {
 	"artist": "AZ",
     "songs": [{
@@ -1488,7 +1488,7 @@
 		"amazon": "B00005LP0N"
 	}],
 	"tags": ["2000s", "experimental", "alternative", "underground"],
-	"related": ["Subtle", "Deep Puddle Dynamics"]
+	"related": ["Subtle", "Deep Puddle Dynamics", "dälek"]
 }, {
 	"artist": "Common",
     "songs": [{
@@ -1648,7 +1648,7 @@
 		"amazon": "B0018CFAMM"
 	}],
 	"tags": ["2000s", "alternative", "jazz"],
-	"related": ["Nujabes", "Binary Star"]
+	"related": ["Nujabes", "Binary Star", "Fat Jon"]
 }, {
 	"artist": "Cypress Hill",
     "songs": [{
@@ -1705,4 +1705,1387 @@
 	}],
 	"tags": ["1990s", "hardcore", "west-coast", "alternative"],
 	"related": ["The Psycho Realm", "Ice Cube", "Beastie Boys", "Public Enemy"]
+}, {
+	"artist": "Da Youngsta's",
+    "songs": [{
+		"name": "Crewz Pop",
+		"year": "1993",
+        "album": "The Aftermath",
+		"youtube": "6ujEAk8Bea8",
+		"spotify": "5U9SwZzR9EhCYHfBCthMLO",
+		"itunes": "id924244390?i=924244576",
+		"googleplay": "Bl3m4ygdw7rhjtvnymx2afa3wry",
+		"amazon": "B0013AUB50"
+	}, {
+		"name": "Hip Hop Ride",
+		"year": "1994",
+        "album": "No Mercy",
+		"youtube": "2yQilQYQ2Mg",
+		"spotify": "2MYP61a4O2CcM9tEYwM0gf",
+		"itunes": "id1033026808?i=1033026922",
+		"googleplay": "Brub7nkhvrnx2zmuctuikoivftm",
+		"amazon": "B0013AW1CQ"
+	}, {
+		"name": "Mad Props",
+		"year": "1994",
+        "album": "No Mercy",
+		"youtube": "ehT_R-Vd6Nk",
+		"spotify": "5VU530BGhqNuMG3UbSwiCZ",
+		"itunes": "id949137527?i=949137546",
+		"googleplay": "Brub7nkhvrnx2zmuctuikoivftm",
+		"amazon": "B0013AQ9DI"
+	}],
+	"albums": [{
+		"name": "The Aftermath",
+		"year": "1993",
+		"spotify": "7ctUb6yIhEjE7FmlyHu3D3",
+		"itunes": "id272493541",
+		"googleplay": "Bl3m4ygdw7rhjtvnymx2afa3wry",
+		"amazon": "B0013AUVT6"
+	}, {
+		"name": "No Mercy",
+		"year": "1994",
+		"spotify": "3IQn3GlPoFHuOPho4sftI1",
+		"itunes": "id272493923",
+		"googleplay": "Brub7nkhvrnx2zmuctuikoivftm",
+		"amazon": "B0013AUVI2"
+	}],
+	"tags": ["1990s", "east-coast", "hardcore"],
+	"related": ["Black Moon", "Das EFX"]
+}, {
+	"artist": "dälek",
+    "songs": [{
+		"name": "Spiritual Healing",
+		"year": "2002",
+        "album": "From Filthy Tongue Of Gods And Griots",
+		"youtube": "4EIRorwqo7C2P4EcYL0p11",
+		"spotify": "obSq2L9lLEE",
+		"itunes": "id989431289",
+		"googleplay": "Byprfe2jeaolz6swoevzcg4pimy",
+		"amazon": "B00WNQ1GFC"
+	}, {
+		"name": "Distorted Prose",
+		"year": "2005",
+        "album": "Absence",
+		"youtube": "tXgM9T4mFbQ",
+		"spotify": "6OGnUJQMOQGgBnnBSSHiOo",
+		"itunes": "id989423223",
+		"googleplay": "B2v7633i2slsf4xp2e6cpuiun4u",
+		"amazon": "B00WNP9GSM"
+	}, {
+		"name": "Abandoned Language",
+		"year": "2007",
+        "album": "Abandoned Language",
+		"youtube": "xrKi8mPR494",
+		"spotify": "2X9DtH88mmDsOaIw4Et1N4",
+		"itunes": "id989422922",
+		"googleplay": "Bmsgmr46skpznx6hg36k3wesuxu",
+		"amazon": "B00WNU0SOS"
+	}],
+	"albums": [{
+		"name": "Negro Necro Nekros",
+		"year": "1998",
+		"amazon": "B00003OOZ9"
+	}, {
+		"name": "From Filthy Tongue Of Gods And Griots",
+		"year": "2002",
+		"spotify": "4ZifLmCPfzhOCocXAMP9Ny",
+		"itunes": "id989431289",
+		"googleplay": "Byprfe2jeaolz6swoevzcg4pimy",
+		"amazon": "B00WNQ1CT2"
+	}, {
+		"name": "Absence",
+		"year": "2005",
+		"spotify": "3DXcW4NMarpCjpP628mX4j",
+		"itunes": "id989423223",
+		"googleplay": "B2v7633i2slsf4xp2e6cpuiun4u",
+		"amazon": "B00WNP9DQM"
+	}, {
+		"name": "Abandoned Language",
+		"year": "2007",
+		"spotify": "3eL9FSEAbrf1N1ViC0Xt4Q",
+		"itunes": "id989422922",
+		"googleplay": "Bmsgmr46skpznx6hg36k3wesuxu",
+		"amazon": "B00WNU0Q04"
+	}],
+	"tags": ["1990s", "2000s", "experimental"],
+	"related": ["Death Grips", "cLOUDDEAD", "Cannibal Ox"]
+}, {
+	"artist": "Danny Brown",
+    "songs": [{
+		"name": "30",
+		"year": "2011",
+        "album": "XXX",
+		"youtube": "J--rO7FP16U",
+		"spotify": "1SId56swkg25SFikqWu95b",
+		"itunes": "id508262167",
+		"googleplay": "Brvaqtat3tc7yz3fyr44l3pto7m",
+		"amazon": "B007J7MHVC"
+	}, {
+		"name": "Grown Up",
+		"year": "2012",
+		"youtube": "NHfWY0is3rE",
+		"spotify": "5ic68M3jaJTEUcEIh5PcqX",
+		"itunes": "id531534713?i=531534724",
+		"googleplay": "B5aucutcfzzw5yol77pb5qugsmm",
+		"amazon": "B0087V0SVK"
+	}, {
+		"name": "25 Bucks",
+		"year": "2013",
+        "album": "Old",
+		"youtube": "d0s0XHVUGF0",
+		"spotify": "5FKaV2J0xiwRENDsl0bMn4",
+		"itunes": "id705667288",
+		"googleplay": "B2gua54ui2rnzhyk36eqb2yhtqm",
+		"amazon": "B00FGF6TUE"
+	}, {
+		"name": "Kush Coma",
+		"year": "2013",
+        "album": "Old",
+		"youtube": "pcGGfojS58U",
+		"spotify": "0FC0A4pl5mGYaS2JporIuU",
+		"itunes": "id705667288",
+		"googleplay": "B2gua54ui2rnzhyk36eqb2yhtqm",
+		"amazon": "B00FGF739U"
+	}, {
+		"name": "When It Rain",
+		"year": "2016",
+        "album": "Atrocity Exhibition",
+		"youtube": "LVyGxlgeAjc",
+		"spotify": "2DGbSEkVncvcUJzFYN0V9y",
+		"itunes": "id1142690534",
+		"googleplay": "Bibrb6wx5bjn25h5f26myksbyiq",
+		"amazon": "B01LY4Y4AT"
+	}],
+	"albums": [{
+		"name": "XXX",
+		"year": "2011",
+		"spotify": "3j21GO4l4W0w7hdF8JVPmo",
+		"itunes": "id508262167",
+		"googleplay": "Brvaqtat3tc7yz3fyr44l3pto7m",
+		"amazon": "B007J7MGG8"
+	}, {
+		"name": "Old",
+		"year": "2013",
+		"spotify": "5SC0415RIGVX9ZfL0tfbAl",
+		"itunes": "id705667288",
+		"googleplay": "B2gua54ui2rnzhyk36eqb2yhtqm",
+		"amazon": "B00FGF6R1U"
+	}, {
+		"name": "Atrocity Exhibition",
+		"year": "2016",
+		"spotify": "3e7vtKJ3m1zVh38VGq2g3H",
+		"itunes": "id1142690534",
+		"googleplay": "Bibrb6wx5bjn25h5f26myksbyiq",
+		"amazon": "B01LX5SCW0"
+	}],
+	"tags": ["2010s", "alternative", "experimental"],
+	"related": ["Run The Jewels", "ScHoolboy Q", "Vince Staples", "Earl Sweatshirt", "Death Grips"]
+}, {
+	"artist": "Das EFX",
+    "songs": [{
+		"name": "They Want EFX",
+		"year": "1992",
+        "album": "Dead Serious",
+		"youtube": "3La9ZlsDGos",
+		"spotify": "3HCzj965m8Fz2E8wZkir6q",
+		"itunes": "id305123831?i=305123994",
+		"googleplay": "Bh2vq524wtu2gh6qk3cbesrqp2u",
+		"amazon": "B001TXVPVK"
+	}, {
+		"name": "Baknaffek",
+		"year": "1993",
+        "album": "Straight Up Sewaside",
+		"youtube": "ZmIQspCHHE8",
+		"spotify": "6GlDfTScLM2wxG7r2LUUCT",
+		"itunes": "id378837400",
+		"googleplay": "B4yu7zapkfs2s7apucpaxn4lcbq",
+		"amazon": "B003TRX4HC"
+	}, {
+		"name": "Real Hip Hop",
+		"year": "1995",
+        "album": "Hold It Down",
+		"youtube": "QbulmeDErOk",
+		"spotify": "7Kutf53V4k0CvU4nKu5oK6",
+		"itunes": "id1033028684?i=1033028751",
+		"googleplay": "B7ost6qmliijpgao5r4bnv7bsqy",
+		"amazon": "B003A9B9IK"
+	}],
+	"albums": [{
+		"name": "Dead Serious",
+		"year": "1992",
+		"spotify": "5L6ETkYF4PeD1pSrAGKuNf",
+		"itunes": "id305123831",
+		"googleplay": "Bh2vq524wtu2gh6qk3cbesrqp2u",
+		"amazon": "B001TXQBOQ"
+	}, {
+		"name": "Straight Up Sewaside",
+		"year": "1993",
+		"spotify": "0IOZCTHj2A1bny1pLo4uRh",
+		"itunes": "id378837400",
+		"googleplay": "B4yu7zapkfs2s7apucpaxn4lcbq",
+		"amazon": "B003TRZ59M"
+	}],
+	"tags": ["1990s", "east-coast"],
+	"related": ["EPMD", "Black Moon", "Redman", "Gang Starr"]
+}, {
+	"artist": "De La Soul",
+    "songs": [{
+		"name": "Me Myself and I",
+		"year": "1989",
+        "album": "3 Feet High And Rising",
+		"youtube": "FJEzEDMqXQQ",
+		"spotify": "3SdOP61TT2l8YQpSaUtsWR",
+		"itunes": "id648690875?i=648690930",
+		"googleplay": "Bzv4s3li7aedlcpnaig67tkn5ry",
+		"amazon": "B00LIQLNYM"
+	}, {
+		"name": "Eye Know",
+		"year": "1989",
+        "album": "3 Feet High And Rising",
+		"youtube": "AZhMoOo4aJY",
+		"googleplay": "Bzv4s3li7aedlcpnaig67tkn5ry",
+		"amazon": "xxxxxxxxxx"
+	}, {
+		"name": "Ring Ring Ring (Ha Ha Hey)",
+		"year": "1991",
+        "album": "De La Soul Is Dead",
+		"youtube": "gC1xuVCBl4o",
+		"googleplay": "Bzv4s3li7aedlcpnaig67tkn5ry",
+		"amazon": "B015FDK538"
+	}, {
+		"name": "Oooh",
+		"year": "2000",
+        "album": "Art Official Intelligence: Mosaic Thump",
+		"youtube": "avIqTrX2eac",
+		"googleplay": "Bzv4s3li7aedlcpnaig67tkn5ry",
+		"amazon": "xxxxxxxxxx"
+	}],
+	"albums": [{
+		"name": "3 Feet High And Rising",
+		"year": "1989",
+		"amazon": "B000000HHE"
+	}, {
+		"name": "De La Soul Is Dead",
+		"year": "1991",
+		"amazon": "B000000HHR"
+	}, {
+		"name": "Buhloone Mindstate",
+		"year": "1993",
+		"amazon": "B000000HJ3"
+	}, {
+		"name": "Stakes Is High",
+		"year": "1996",
+		"amazon": "B000000HKY"
+	}, {
+		"name": "The Grind Date",
+		"year": "2004",
+		"spotify": "1RmcAYmGiRHFBjhgkrg3AA",
+		"itunes": "id1143719869",
+		"googleplay": "Bnyhonqbz7pikutenrbdunrzxly",
+		"amazon": "B00NAOYCZC"
+	}],
+	"tags": ["1980s", "1990s", "2000s", "east-coast", "alternative"],
+	"related": ["Prince Paul", "A Tribe Called Quest", "The Pharcyde", "J Dilla", "Common", "Jungle Brothers"]
+}, {
+	"artist": "dead prez",
+    "songs": [{
+		"name": "Hip-Hop",
+		"year": "2000",
+        "album": "Let's Get Free",
+		"youtube": "4jNyr6BJZuI",
+		"spotify": "2HoDr1yVksl19omOhc1zWy",
+		"itunes": "id219077856",
+		"googleplay": "Btqg2tzwkjsoc6iojwwyc6uxmsm",
+		"amazon": "B00137MHLE"
+	}, {
+		"name": "Mind Sex",
+		"year": "2000",
+        "album": "Let's Get Free",
+		"youtube": "VwTNOxJXMYM",
+		"spotify": "0AmNUVZWESLEtq1TMqgWWc",
+		"itunes": "id219077856",
+		"googleplay": "Btqg2tzwkjsoc6iojwwyc6uxmsm",
+		"amazon": "B00137KGN0"
+	}],
+	"albums": [{
+		"name": "Let's Get Free",
+		"year": "2000",
+		"spotify": "7gXuElmegVReY7imkb5bf8",
+		"itunes": "id219077856",
+		"googleplay": "Btqg2tzwkjsoc6iojwwyc6uxmsm",
+		"amazon": "B00138GXAE"
+	}],
+	"tags": ["2000s", "underground"],
+	"related": ["Immortal Technique", "Pharoahe Monch", "The Coup", "Talib Kweli"]
+}, {
+	"artist": "Death Grips",
+    "songs": [{
+		"name": "Guillotine",
+		"year": "2011",
+        "album": "Exmilitary",
+		"youtube": "Orlbo9WkZ2E",
+		"spotify": "3IrcvqIf3ZiBhf3xdsctRX",
+		"itunes": "id454986803?i=454986806",
+		"googleplay": "Byshcb5evhhpbtvjafjadbbuose",
+		"amazon": "B005G6786C"
+	}, {
+		"name": "I've Seen Footage",
+		"year": "2012",
+        "album": "The Money Store",
+		"youtube": "DigtCrO77L8",
+		"spotify": "7nCONy10IHp7XD3oYZ0lcx",
+		"itunes": "id515449028",
+		"googleplay": "Bzbye3j76t7wi6tq7ysjh5bidom",
+		"amazon": "B007T0HU1Q"
+	}, {
+		"name": "Get Got",
+		"year": "2012",
+        "album": "The Money Store",
+		"youtube": "HIrKSqb4H4A",
+		"spotify": "781V2Y5LPtcpgONEOadadE",
+		"itunes": "id515449028",
+		"googleplay": "Bzbye3j76t7wi6tq7ysjh5bidom",
+		"amazon": "B007T0HQTW"
+	}, {
+		"name": "No Love",
+		"year": "2012",
+        "album": "No Love Deep Web",
+		"youtube": "2MHhLDCJ57E",
+		"spotify": "5fDj1YVNR04RtQNP4iYapO",
+		"itunes": "id720939680?i=720940020",
+		"googleplay": "Be45zs63xdsravqzg7of7oojk4e",
+		"amazon": "B00GI56A7S"
+	}],
+	"albums": [{
+		"name": "Exmilitary",
+		"year": "2011"
+	}, {
+		"name": "The Money Store",
+		"year": "2012",
+		"spotify": "1PQDjdBpHPikAodJqjzm6a",
+		"itunes": "id515449028",
+		"googleplay": "Bzbye3j76t7wi6tq7ysjh5bidom",
+		"amazon": "B007T0HQ4M"
+	}, {
+		"name": "No Love Deep Web",
+		"year": "2012",
+		"spotify": "08aqY8lv4zx4uaqBUpMD8a",
+		"itunes": "id720939680",
+		"googleplay": "Be45zs63xdsravqzg7of7oojk4e",
+		"amazon": "B00GI564T2"
+	}, {
+		"name": "Government Plates",
+		"year": "2013",
+		"spotify": "2EuKpzSQ9RQ2n06Iu0pDop",
+		"itunes": "id791628884",
+		"googleplay": "Bndodalh6icx5gfrhc6xixu5fi4",
+		"amazon": "B00HNYZQ3C"
+	}, {
+		"name": "Bottomless Pit",
+		"year": "2016",
+		"spotify": "4dIPUQHheyH9e6ioplvNT2",
+		"itunes": "id1109208657",
+		"googleplay": "B7vqnmjnwqghbbkhrua4434tub4",
+		"amazon": "B01EY6D98K"
+	}],
+	"tags": ["2010s", "experimental"],
+	"related": ["dälek", "Danny Brown", "Madvillain", "Earl Sweatshirt", "Shabazz Palaces"]
+}, {
+	"artist": "Deep Puddle Dynamics",
+    "songs": [{
+		"name": "The Scarecrow Speaks",
+		"year": "1999",
+        "album": "The Taste Of Rain...Why Kneel",
+		"youtube": "GEHIldAAd6c",
+		"spotify": "6EydZLIHUblBsxQZZvvVDO",
+		"itunes": "id1020081151?i=1020082147",
+		"googleplay": "B262nzwoipteaolgod65rhk5cmm",
+		"amazon": "B011SB2746"
+	}, {
+		"name": "Deep Puddle Theme Song",
+		"year": "1999",
+        "album": "The Taste Of Rain...Why Kneel",
+		"youtube": "LOvwILu2deM",
+		"spotify": "5CHp3dbhzSRA8ZRzkUtavY",
+		"itunes": "id1020081151?i=1020082136",
+		"googleplay": "B262nzwoipteaolgod65rhk5cmm",
+		"amazon": "B011SB1XKA"
+	}],
+	"albums": [{
+		"name": "The Taste Of Rain...Why Kneel",
+		"year": "1999",
+		"spotify": "7lQIykWy1vIZnspgkM1FuO",
+		"itunes": "id1020081151",
+		"googleplay": "B262nzwoipteaolgod65rhk5cmm",
+		"amazon": "B00004TYPQ"
+	}],
+	"tags": ["1990s", "underground"],
+	"related": ["Sole", "Company Flow", "cLOUDDEAD"]
+}, {
+	"artist": "Deltron 3030",
+    "songs": [{
+		"name": "3030",
+		"year": "2000",
+        "album": "Deltron 3030",
+		"youtube": "Q7_jbluF0qo",
+		"spotify": "39GBFwBe4GGk7i3yr3F46P",
+		"itunes": "id288544306",
+		"googleplay": "Bdxnbtuklc4owycf4go2tfzjede",
+		"amazon": "B001F3MSGK"
+	}, {
+		"name": "Mastermind",
+		"year": "2000",
+        "album": "Deltron 3030",
+		"youtube": "yf9OAFML_Eg",
+		"spotify": "0uMn8WKu3qtQLaUyal1bsz",
+		"itunes": "id288544306",
+		"googleplay": "Bdxnbtuklc4owycf4go2tfzjede",
+		"amazon": "B001F3Q5S2"
+	}, {
+		"name": "Things You Can Do",
+		"year": "2000",
+        "album": "Deltron 3030",
+		"youtube": "Pr9SQri2884",
+		"spotify": "3LRUR23xkDdMSOPhTnLv2d",
+		"itunes": "id288544306",
+		"googleplay": "Bdxnbtuklc4owycf4go2tfzjede",
+		"amazon": "B001F3TBAG"
+	}],
+	"albums": [{
+		"name": "Deltron 3030",
+		"year": "2000",
+		"spotify": "04uhhcjGVCHodMgZjXOlye",
+		"itunes": "id288544306",
+		"googleplay": "Bdxnbtuklc4owycf4go2tfzjede",
+		"amazon": "B001F3S3WI"
+	}],
+	"tags": ["2000s", "underground", "alternative"],
+	"related": ["Del tha Funkee Homosapien", "Dr. Octagon", "Hieroglyphics", "Aesop Rock", "MF DOOM"]
+}, {
+	"artist": "Digable Planets",
+    "songs": [{
+		"name": "Rebirth of Slick (Cool Like Dat)",
+		"year": "1993",
+        "album": "Reachin' (A New Refutation of Time and Space)",
+		"youtube": "cM4kqL13jGM",
+		"spotify": "26q6YTrXt9l8qshIveiTX9",
+		"itunes": "id725211790?i=725211798",
+		"googleplay": "B6nfgxhbbyhjx2ep7xebmtrmvt4",
+		"amazon": "B000TE9PR6"
+	}, {
+		"name": "Where I'm From",
+		"year": "1993",
+        "album": "Reachin' (A New Refutation of Time and Space)",
+		"youtube": "sl-pjb7y3y0",
+		"spotify": "1962ZwEY7WNQLcmYFn3eR9",
+		"itunes": "id725211790?i=725211795",
+		"googleplay": "B6nfgxhbbyhjx2ep7xebmtrmvt4",
+		"amazon": "B000TEBOCU"
+	}, {
+		"name": "9th Wonder (Blackitolism)",
+		"year": "1994",
+        "album": "Blowout Comb",
+		"youtube": "dJKIPz1c0Gw",
+		"spotify": "2YM9qQklVODlkC3T9YD0e0",
+		"itunes": "id1031059259?i=1031059723",
+		"googleplay": "Bff3wzs6sw372ak7iafbcu4vopq",
+		"amazon": "B000SZBMU4"
+	}, {
+		"name": "Black Ego",
+		"year": "1994",
+        "album": "Blowout Comb",
+		"youtube": "NbMGHEQNmgo",
+		"spotify": "1p2460gsFzAH46mPneG0uL",
+		"itunes": "id724050563",
+		"googleplay": "Bff3wzs6sw372ak7iafbcu4vopq",
+		"amazon": "B000SZBMD6"
+	}],
+	"albums": [{
+		"name": "Reachin' (A New Refutation of Time and Space)",
+		"year": "1993",
+		"spotify": "5snUbps5KleLIP0cVI72lP",
+		"itunes": "id725211790",
+		"googleplay": "B6nfgxhbbyhjx2ep7xebmtrmvt4",
+		"amazon": "B000TENGU8"
+	}, {
+		"name": "Blowout Comb",
+		"year": "1994",
+		"spotify": "5gvlpKnnINq8Z1YICdtiBt",
+		"itunes": "id724050563",
+		"googleplay": "Bff3wzs6sw372ak7iafbcu4vopq",
+		"amazon": "B000SZF7KK"
+	}],
+	"tags": ["1990s", "jazz"],
+	"related": ["Shabazz Palaces", "Pete Rock & C.L. Smooth", "The Pharcyde", "A Tribe Called Quest", "Souls of Mischief"]
+}, {
+	"artist": "Digital Underground",
+    "songs": [{
+		"name": "The Humpty Dance",
+		"year": "1990",
+        "album": "Sex Packets",
+		"youtube": "y38Ec57yMG8",
+		"spotify": "4WxQGUmWBRNovxlF2g8Xdv",
+		"itunes": "id159363558?i=159363560",
+		"googleplay": "Blv7szej7n7l3agpqakyrtxupsa",
+		"amazon": "B00122D39K"
+	}, {
+		"name": "Same Song",
+		"year": "1991",
+        "album": "This Is an EP Release",
+		"youtube": "3cyfV7mllWo",
+		"spotify": "2L2Zjd2UnTC2l87fpmzw3S",
+		"itunes": "id298679801?i=298679844",
+		"googleplay": "B6e7lp2pyanclnukm6s7mtl2l6q",
+		"amazon": "B00123NQNM"
+	}],
+	"albums": [{
+		"name": "Sex Packets",
+		"year": "1990",
+		"spotify": "7xOwZi6Ks5f5XjTEWoTAH8",
+		"itunes": "id159363558",
+		"googleplay": "Blv7szej7n7l3agpqakyrtxupsa",
+		"amazon": "B00122DE4O"
+	}],
+	"tags": ["1990s", "west-coast", "alternative"],
+	"related": ["2Pac", "Too $hort", "Slick Rick", "Naughty By Nature"]
+}, {
+	"artist": "Dj Quik",
+    "songs": [{
+		"name": "Tonite",
+		"year": "1991",
+        "album": "Quik Is the Name",
+		"youtube": "hykZtBaPKps",
+		"spotify": "2hluGQtmPypU3tsQudCQ3U",
+		"itunes": "id283661311",
+		"googleplay": "Btiuhuzsbsdndrow5hpczizv4pi",
+		"amazon": "B00137SWWC"
+	}, {
+		"name": "Jus Lyke Compton",
+		"year": "1992",
+        "album": "Way 2 Fonky",
+		"youtube": "LaCyV8eiRm8",
+		"spotify": "24M44x9vVlOlXipjJJcAY7",
+		"itunes": "id298555243",
+		"googleplay": "Bgszgplto2xix4oi65am7dxex5q",
+		"amazon": "B01DVXC0QO"
+	}, {
+		"name": "Do You Know",
+		"year": "2009",
+        "album": "BlaQKout",
+		"w": "Kurupt",
+		"youtube": "h190oKUSHk8",
+		"spotify": "60dTUmsEXFRkBWddc2JNpX",
+		"itunes": "id711579897",
+		"amazon": "B002BPH63Q"
+	}, {
+		"name": "Pet Sematary",
+		"year": "2014",
+        "album": "The Midnight Life",
+		"youtube": "Ub0zVVIVJ2w",
+		"spotify": "7e5Hsql3Sq8756JQ3mdQeX",
+		"itunes": "id912629394",
+		"googleplay": "B4h74coswvecj353akr4fn22xs4",
+		"amazon": "B00N281T8Y"
+	}],
+	"albums": [{
+		"name": "Quik Is the Name",
+		"year": "1991",
+		"spotify": "6qzvk2A6wQpy1f69hrWj3B",
+		"itunes": "id283661311",
+		"googleplay": "Btiuhuzsbsdndrow5hpczizv4pi",
+		"amazon": "B00138F4D6"
+	}, {
+		"name": "Way 2 Fonky",
+		"year": "1992",
+		"spotify": "7lN48pcvMxO3MpwTEdKaEW",
+		"itunes": "id298555243",
+		"googleplay": "Bgszgplto2xix4oi65am7dxex5q",
+		"amazon": "B01DVXD1YY"
+	}, {
+		"name": "BlaQKout",
+		"year": "2009",
+		"w": "Kurupt",
+		"spotify": "1fCu4LGOOCv1PvSdsoamLW",
+		"itunes": "id711579897",
+		"amazon": "B002BPH604"
+	}, {
+		"name": "The Book of David",
+		"year": "2011",
+		"spotify": "1PlWZCEmezLce2Mlyd5DQm",
+		"amazon": "B004W6EVHQ"
+	}, {
+		"name": "The Midnight Life",
+		"year": "2014",
+		"spotify": "0T92mnf5HL7eb0ipIBOSEU",
+		"itunes": "id912629394",
+		"googleplay": "B4h74coswvecj353akr4fn22xs4",
+		"amazon": "B00N281JIO"
+	}],
+	"tags": ["1990s", "2000s", "2010s", "west-coast", "g-funk"],
+	"related": ["2nd II None", "2Pac", "Warren G", "Above The Law"]
+}, {
+	"artist": "DJ Shadow",
+    "songs": [{
+		"name": "Midnight In A Perfect World",
+		"year": "1996",
+        "album": "Endtroducing.....",
+		"youtube": "InFbBlpDTfQ",
+		"spotify": "48Dz1HTWoMLpT5voht8igk",
+		"itunes": "id14205179",
+		"googleplay": "Bgdujj2a7sdedcdypmlzizm2mq4",
+		"amazon": "B00POIXVIG"
+	}, {
+		"name": "Building Steam With A Grain Of Salt",
+		"year": "1996",
+        "album": "Endtroducing.....",
+		"youtube": "dcxsheROd3E",
+		"spotify": "0UMzgNAcJ7FKHO1wdUPJt8",
+		"itunes": "id14205179",
+		"googleplay": "Bgdujj2a7sdedcdypmlzizm2mq4",
+		"amazon": "B00POIWYTI"
+	}, {
+		"name": "Six Days",
+		"year": "2002",
+        "album": "The Private Press",
+		"youtube": "eY-eyZuW_Uk",
+		"spotify": "4SaWqgNnnTVN3LOIYlY2WT",
+		"itunes": "id14922118",
+		"googleplay": "Bas4b77m4hzm7gi5qnszhpq4iiy",
+		"amazon": "B001NSZVQ6"
+	}],
+	"albums": [{
+		"name": "Endtroducing.....",
+		"year": "1996",
+		"spotify": "06HRPqj5bIfhxSpXN7lAPR",
+		"itunes": "id14205179",
+		"googleplay": "Bgdujj2a7sdedcdypmlzizm2mq4",
+		"amazon": "B00POIWSWG"
+	}, {
+		"name": "The Private Press",
+		"year": "2002",
+		"spotify": "69Z1r3R3vVNVAeOaWdZNlD",
+		"itunes": "id14922118",
+		"googleplay": "Bas4b77m4hzm7gi5qnszhpq4iiy",
+		"amazon": "B001NSUWS8"
+	}],
+	"tags": ["1990s", "2000s", "instrumental"],
+	"related": ["RJD2", "Run The Jewels"]
+}, {
+	"artist": "DMX",
+    "songs": [{
+		"name": "Ruff Ryders' Anthem",
+		"year": "1998",
+        "album": "It's Dark And Hell Is Hot",
+		"youtube": "ThlhSnRk21E",
+		"spotify": "32SFvZODywPBVDYSYtqxCj",
+		"itunes": "id350700346?i=350700491",
+		"googleplay": "Bfu4664hd7gajpgkg2ywfwwzvzq",
+		"amazon": "B0034KDIFC"
+	}, {
+		"name": "Party Up (Up in Here)",
+		"year": "1999",
+        "album": "... And Then There Was X",
+		"youtube": "thIVtEOtlWM",
+		"spotify": "4MxZW1XEcPuIZmkANsJabC",
+		"itunes": "id135741?i=135721",
+		"googleplay": "Bcpl2lvxh5b7ukoapxeyl6lbacu",
+		"amazon": "B0034KBT7G"
+	}, {
+		"name": "X Gon' Give It To Ya",
+		"year": "2003",
+        "album": "Grand Champ",
+		"youtube": "fGx6K90TmCI",
+		"spotify": "6uP0XLqjRqFx8HAfesdcAg",
+		"itunes": "id350700346?i=350700598",
+		"googleplay": "Bcpl2lvxh5b7ukoapxeyl6lbacu",
+		"amazon": "B0034KBT7Q"
+	}],
+	"albums": [{
+		"name": "It's Dark And Hell Is Hot",
+		"year": "1998",
+		"spotify": "2KwZgeD7BnTrOtiNvFr7CL",
+		"itunes": "id1085327276",
+		"googleplay": "Bfu4664hd7gajpgkg2ywfwwzvzq",
+		"amazon": "B0040I9JJG"
+	}, {
+		"name": "Flesh Of My Flesh, Blood Of My Blood",
+		"year": "1998",
+		"spotify": "3dNsHWAS8t7AiAqj9ofG5T",
+		"itunes": "id815326377",
+		"googleplay": "B55muuy5blvyq6bfr2c4v2jurme",
+		"amazon": "B00IBIWNBW"
+	}],
+	"tags": ["1990s", "east-coast", "hardcore"],
+	"related": ["50 Cent", "Busta Rhymes", "Ice Cube", "2Pac"]
+}, {
+	"artist": "Doug E. Fresh & The Get Fresh Crew",
+    "songs": [{
+		"name": "The Show",
+		"year": "1985",
+        "album": "Oh My God!",
+		"youtube": "bDkqz5C62SM",
+		"spotify": "275i10hY9lXdmrTTTkZeS0",
+		"itunes": "id434905811?i=434906164",
+		"googleplay": "Bifqv2lbg2bxdblhhewjrqs5f4y",
+		"amazon": "B004YXS0XI"
+	}, {
+		"name": "La Di Da Di",
+		"year": "1985",
+		"w": "Slick Rick",
+		"youtube": "zM0KAh5w7Rs",
+		"spotify": "0WYu233HGAjMAu9UK5iHtS",
+		"itunes": "id434905811?i=434905892",
+		"googleplay": "Bifqv2lbg2bxdblhhewjrqs5f4y",
+		"amazon": "B004YXRZTS"
+	}, {
+		"name": "Keep Risin' To The Top",
+		"year": "1988",
+        "album": "The World's Greatest Entertainer",
+		"youtube": "2NANIUizP18",
+		"spotify": "3Lce42y2okuMkh4qnN0SB9",
+		"itunes": "id434905811?i=434905878",
+		"googleplay": "Bifqv2lbg2bxdblhhewjrqs5f4y",
+		"amazon": "B004YXRZQQ"
+	}],
+	"albums": [{
+		"name": "Oh My God!",
+		"year": "1986",
+		"spotify": "0mlNBnnlFOqv7QU6DPwDi9",
+		"itunes": "id434905811",
+		"googleplay": "Bifqv2lbg2bxdblhhewjrqs5f4y",
+		"amazon": "B004YXRZHA"
+	}, {
+		"name": "The World's Greatest Entertainer",
+		"year": "1988",
+		"spotify": "0mlNBnnlFOqv7QU6DPwDi9",
+		"itunes": "id434905811",
+		"googleplay": "Bifqv2lbg2bxdblhhewjrqs5f4y",
+		"amazon": "B004YXRZHA"
+	}],
+	"tags": ["1980s"],
+	"related": ["Slick Rick"]
+}, {
+	"artist": "Dr. Dre",
+    "songs": [{
+		"name": "Nuthin' But A 'G' Thang",
+		"year": "1992",
+        "album": "The Chronic",
+		"youtube": "l4E4XC7qOfk",
+		"itunes": "id6654037?i=6654013",
+		"googleplay": "Bbvsejm6wero4q3sosmcfjgyfru"
+	}, {
+		"name": "Still D.R.E.",
+		"year": "1999",
+        "album": "2001",
+		"youtube": "_CL6n0FJZpk",
+		"spotify": "503OTo2dSqe7qk76rgsbep",
+		"itunes": "id273658365?i=273658379",
+		"googleplay": "B6t3bfimlpaqb6udif4hebsqndi",
+		"amazon": "B0013GEZB0"
+	}, {
+		"name": "Forgot About Dre",
+		"year": "1999",
+        "album": "2001",
+		"youtube": "QFcv5Ma8u8k",
+		"spotify": "7iXF2W9vKmDoGAhlHdpyIa",
+		"itunes": "id273658365?i=273658392",
+		"googleplay": "B6t3bfimlpaqb6udif4hebsqndi",
+		"amazon": "B0013GH1ZM"
+	}, {
+		"name": "The Next Episode",
+		"year": "1999",
+        "album": "2001",
+		"youtube": "QZXc39hT8t4",
+		"spotify": "4LwU4Vp6od3Sb08CsP99GC",
+		"itunes": "id273658365?i=273658396",
+		"googleplay": "B6t3bfimlpaqb6udif4hebsqndi",
+		"amazon": "B0013GH20Q"
+	}],
+	"albums": [{
+		"name": "The Chronic",
+		"year": "1992",
+		"itunes": "id6654037",
+		"amazon": "B00005AQEQ"
+	}, {
+		"name": "2001",
+		"year": "1999",
+		"spotify": "7q2B4M5EiBkqrlsNW8lB7N",
+		"itunes": "id273658365",
+		"googleplay": "B6t3bfimlpaqb6udif4hebsqndi",
+		"amazon": "B0013GF6QS"
+	}, {
+		"name": "Compton: A Soundtrack By Dr. Dre",
+		"year": "2015",
+		"itunes": "id1025137696",
+		"googleplay": "Br3t7c6ogiswu7i3b7rawsnsmnq",
+		"amazon": "B0147O676U"
+	}],
+	"tags": ["1990s", "2010s", "west-coast", "g-funk", "gangsta", "hardcore"],
+	"related": ["N.W.A", "Snoop Dogg", "Eminem", "Ice Cube", "The Game", "Kendrick Lamar", "2Pac", "The D.O.C."]
+}, {
+	"artist": "Dr. Octagon",
+    "songs": [{
+		"name": "Blue Flowers",
+		"year": "1996",
+        "album": "Dr. Octagonecologyst",
+		"youtube": "V9VYzNUXGDA",
+		"spotify": "1xQ1v0xnKgZyQX90f75bKt",
+		"itunes": "id310121423",
+		"googleplay": "Btweqf7yqjnrn7tvd5kvxrizroy",
+		"amazon": "B002HTF3Y0"
+	}, {
+		"name": "Earth People",
+		"year": "1996",
+        "album": "Dr. Octagonecologyst",
+		"youtube": "tjKHQeRSvjk",
+		"spotify": "6kk1yZ50i2i5E6rZ6WWL0f",
+		"itunes": "id310121423",
+		"googleplay": "Btweqf7yqjnrn7tvd5kvxrizroy",
+		"amazon": "B002HT91SE"
+	}],
+	"albums": [{
+		"name": "Dr. Octagonecologyst",
+		"year": "1996",
+		"spotify": "0GAqyZFjgaz6V5ozTS0dfW",
+		"itunes": "id310121423",
+		"googleplay": "Btweqf7yqjnrn7tvd5kvxrizroy",
+		"amazon": "B002HT7GO0"
+	}],
+	"tags": ["1990s", "alternative", "underground"],
+	"related": ["Deltron 3030", "Company Flow", "Del tha Funkee Homosapien", "Ultramagnetic MC's", "MF DOOM", "Quasimoto"]
+}, {
+	"artist": "Drake",
+    "songs": [{
+		"name": "Marvins Room",
+		"year": "2011",
+        "album": "Take Care",
+		"youtube": "nwyjxsOYnys",
+		"spotify": "2z3htsNRuhDN923ITatc56",
+		"itunes": "id479760323",
+		"googleplay": "Bbn6cgq65ptwshwt7t5pjorl3ie",
+		"amazon": "B007IUFEKQ"
+	}, {
+		"name": "Started From The Bottom",
+		"year": "2013",
+        "album": "Nothing Was The Same",
+		"youtube": "RubBzkZzpUA",
+		"spotify": "6V2D8Lls36APk0THDjBDfE",
+		"itunes": "id705503499",
+		"googleplay": "Bwssujsoqhv375pme5aunxbmzuq",
+		"amazon": "B00F6HICWK"
+	}, {
+		"name": "Worst Behavior",
+		"year": "2013",
+        "album": "Nothing Was The Same",
+		"youtube": "CccnAvfLPvE",
+		"spotify": "6oF3Es1YzzmLKjGBfThUvD",
+		"itunes": "id705503499",
+		"googleplay": "Bwssujsoqhv375pme5aunxbmzuq",
+		"amazon": "B00F6HIGLW"
+	}, {
+		"name": "Energy",
+		"year": "2015",
+        "album": "If You're Reading This It's Too Late",
+		"youtube": "7LnBvuzjpr4",
+		"spotify": "79XrkTOfV1AqySNjVlygpW",
+		"itunes": "id966997496",
+		"googleplay": "Bnaxrjtoyjx7lmlb4pytnubmbam",
+		"amazon": "B00TJTBO1W"
+	}, {
+		"name": "Hotline Bling",
+		"year": "2015",
+        "album": "Views",
+		"youtube": "uxpDa-c-4Mc",
+		"spotify": "1OAYKfE0YdrN7C1yLWaLJo",
+		"itunes": "id1108737195",
+		"googleplay": "Bzmwxwhctn3r5ngzkl4ozy3vgka",
+		"amazon": "B01F65XTS8"
+	}],
+	"albums": [{
+		"name": "Take Care",
+		"year": "2011",
+		"spotify": "63WdJvk8G9hxJn8u5rswNh",
+		"itunes": "id479760323",
+		"googleplay": "Bbn6cgq65ptwshwt7t5pjorl3ie",
+		"amazon": "B007IUFBCM"
+	}, {
+		"name": "Nothing Was The Same",
+		"year": "2013",
+		"spotify": "2gXTTQ713nCELgPOS0qWyt",
+		"itunes": "id705503499",
+		"googleplay": "Bwssujsoqhv375pme5aunxbmzuq",
+		"amazon": "B00F6HI8CO"
+	}, {
+		"name": "If You're Reading This It's Too Late",
+		"year": "2015",
+		"spotify": "0ptlfJfwGTy0Yvrk14JK1I",
+		"itunes": "xxxxxxxid966997496xxx",
+		"googleplay": "Bnaxrjtoyjx7lmlb4pytnubmbam",
+		"amazon": "B00TJTBJBC"
+	}],
+	"tags": ["2010s"],
+	"related": ["Kanye West", "Future", "Chance The Rapper", "Lil Wayne"]
+}, {
+	"artist": "Earl Sweatshirt",
+    "songs": [{
+		"name": "Earl",
+		"year": "2010",
+        "album": "Earl",
+		"youtube": "4WMXtU2IrKw",
+		"googleplay": "Bspr3tlil3he7inp5pljf22k7ra",
+		"amazon": "B0119FQ6OS"
+	}, {
+		"name": "Chum",
+		"year": "2013",
+        "album": "Doris",
+		"youtube": "FCbWLSZrZfw",
+		"spotify": "6plT7nFGiXKSBP9HFSI4ef",
+		"itunes": "id669700847",
+		"googleplay": "B2vv3visns2bwxeoivceo6bdvei",
+		"amazon": "B00EE66GWM"
+	}, {
+		"name": "Grief",
+		"year": "2015",
+        "album": "I Don't Like Shit, I Don't Go Outside",
+		"youtube": "tZ5Mu2gs-M8",
+		"spotify": "47A4a2ZxJaZz5nBME2HtXs",
+		"itunes": "id974796109",
+		"googleplay": "B7aee6ytodj6cm7agq2e4hrbejm",
+		"amazon": "B00UIKNOAU"
+	}],
+	"albums": [{
+		"name": "Earl",
+		"year": "2010",
+		"googleplay": "Bspr3tlil3he7inp5pljf22k7ra",
+		"amazon": "B0119FPWT8"
+	}, {
+		"name": "Doris",
+		"year": "2013",
+		"spotify": "5vRfIDOPJHy3W2wHWbzLlE",
+		"itunes": "id669700847",
+		"googleplay": "B2vv3visns2bwxeoivceo6bdvei",
+		"amazon": "B00EE66CW6"
+	}, {
+		"name": "I Don't Like Shit, I Don't Go Outside",
+		"year": "2015",
+		"spotify": "3wUv2IjD5hPrqlPakpczQa",
+		"itunes": "id974796109",
+		"googleplay": "B7aee6ytodj6cm7agq2e4hrbejm",
+		"amazon": "B00UIKN9UA"
+	}],
+	"tags": ["2010s"],
+	"related": ["Vince Staples", "Danny Brown", "Isaiah Rashad", "A$AP Rocky"]
+}, {
+	"artist": "Edan",
+    "songs": [{
+		"name": "Mic Manipulator",
+		"year": "2002",
+        "album": "Primitive Plus",
+		"youtube": "87fHTt2bAq0",
+		"spotify": "3krQprpiZC47i97gN0oL3X",
+		"itunes": "id134189957",
+		"amazon": "B000QQ6WW8"
+	}, {
+		"name": "Fumbling Over Words That Rhyme",
+		"year": "2005",
+        "album": "Beauty And The Beat",
+		"youtube": "mh1cd3lJBuI",
+		"spotify": "3FnzzFJxIrcIxQ3JJNFalO",
+		"itunes": "id125302141",
+		"amazon": "B000QN5JPW"
+	}, {
+		"name": "I See Colours",
+		"year": "2005",
+        "album": "Beauty And The Beat",
+		"youtube": "Ndho625Fb0s",
+		"spotify": "4Bq0k8kj3UJzJFHFcNvS2e",
+		"itunes": "id125302141",
+		"amazon": "B000QN5JOI"
+	}],
+	"albums": [{
+		"name": "Primitive Plus",
+		"year": "2002",
+		"spotify": "3wOULJODiVzUwlWAPjOP81",
+		"itunes": "id134189957",
+		"amazon": "B0000669NG"
+	}, {
+		"name": "Beauty And The Beat",
+		"year": "2005",
+		"spotify": "0E5nyAi6rLhzfrsOxYedX3",
+		"itunes": "id125302141",
+		"amazon": "B000QZY4Y2"
+	}],
+	"tags": ["2000s"],
+	"related": ["Mr. Lif", "Cannibal Ox", "Company Flow", "Dr. Octagon"]
+}, {
+	"artist": "El-P",
+    "songs": [{
+		"name": "Stepfather Factory",
+		"year": "2002",
+        "album": "Fantastic Damage",
+		"youtube": "5UH0B4CSn3w"
+	}, {
+		"name": "Flyentology",
+		"year": "2007",
+        "album": "I'll Sleep When You're Dead",
+		"youtube": "2dBqGINeDvg"
+	}, {
+		"name": "The Full Retard",
+		"year": "2012",
+        "album": "Cancer For Cure",
+		"youtube": "OZptOs8Gu9k",
+		"spotify": "1nBhywgjJvwVB5VU0Bvumd",
+		"itunes": "id520430291",
+		"googleplay": "Blhyr3fve47dnyfyumo6bz77uo4",
+		"amazon": "B007W3PZ0S"
+	}, {
+		"name": "Oh Hail No",
+		"year": "2012",
+        "album": "Cancer For Cure",
+		"youtube": "W2ed5osQYvU",
+		"spotify": "39G4fHR0tZmIudQy71BWR6",
+		"itunes": "id520430291",
+		"googleplay": "Blhyr3fve47dnyfyumo6bz77uo4",
+		"amazon": "B007W3Q3SG"
+	}],
+	"albums": [{
+		"name": "Fantastic Damage",
+		"year": "2002",
+		"amazon": "B000063VAW"
+	}, {
+		"name": "I'll Sleep When You're Dead",
+		"year": "2007",
+		"amazon": "B000MM0KXS"
+	}, {
+		"name": "Cancer For Cure",
+		"year": "2012",
+		"spotify": "5zCfx4NLmvjmI3mwYJgdlT",
+		"itunes": "id520430291",
+		"googleplay": "Blhyr3fve47dnyfyumo6bz77uo4",
+		"amazon": "B007W3PWZ6"
+	}],
+	"tags": ["2000s", "2010s", "underground", "alternative"],
+	"related": ["Run The Jewels", "Company Flow", "Killer Mike", "Cannibal Ox", "Aesop Rock", "Cage"]
+}, {
+	"artist": "Eminem",
+    "songs": [{
+		"name": "My Name Is",
+		"year": "1999",
+        "album": "The Slim Shady LP",
+		"youtube": "sNPnbI1arSE",
+		"spotify": "75IN3CtuZwTHTnZvYM4qnJ",
+		"itunes": "id99021826?i=99021861",
+		"googleplay": "Bryufe6figtaevin4vrj6ty5upu",
+		"amazon": "B016JP7UJ8"
+	}, {
+		"name": "The Real Slim Shady",
+		"year": "2000",
+        "album": "The Marshall Mathers LP",
+		"youtube": "eJO5HU_7_1w",
+		"spotify": "3yfqSUWxFvZELEM4PmlwIR",
+		"itunes": "id99021826?i=99021977",
+		"googleplay": "B6j7a47jspg6irl2qzk6vlcekmu",
+		"amazon": "B000VWKKTS"
+	}, {
+		"name": "Stan",
+		"year": "2000",
+        "album": "The Marshall Mathers LP",
+		"youtube": "gOMhN-hfMtY",
+		"spotify": "3UmaczJpikHgJFyBTAJVoz",
+		"itunes": "id99021826?i=99021874",
+		"googleplay": "B6j7a47jspg6irl2qzk6vlcekmu",
+		"amazon": "B000VWGZJ2"
+	}, {
+		"name": "Without Me",
+		"year": "2002",
+        "album": "The Eminem Show",
+		"youtube": "YVkUvmDQ3HY",
+		"spotify": "7lQ8MOhq6IN2w8EYcFNSUk",
+		"itunes": "id99021826?i=99021928",
+		"googleplay": "Bastzmooyzgdc6ckls2s7chbtoe",
+		"amazon": "B000VWQFQ0"
+	}, {
+		"name": "Lose Yourself",
+		"year": "2002",
+        "album": "8 Mile Soundtrack",
+		"youtube": "_Yhyp-_hX2s",
+		"spotify": "5Z01UMMf7V1o0MzF86s6WJ",
+		"itunes": "id99021826?i=99021906",
+		"googleplay": "Bdoaya5ggq3da7uaeclam6crdhq",
+		"amazon": "B001NY9XUA"
+	}],
+	"albums": [{
+		"name": "The Slim Shady LP",
+		"year": "1999",
+		"spotify": "0vE6mttRTBXRe9rKghyr1l",
+		"itunes": "id1047616224",
+		"googleplay": "Bryufe6figtaevin4vrj6ty5upu",
+		"amazon": "B016JP7OTY"
+	}, {
+		"name": "The Marshall Mathers LP",
+		"year": "2000",
+		"spotify": "6t7956yu5zYf5A829XRiHC",
+		"itunes": "id13490757",
+		"googleplay": "B6j7a47jspg6irl2qzk6vlcekmu",
+		"amazon": "B000VWGYHU"
+	}, {
+		"name": "The Eminem Show",
+		"year": "2002",
+		"spotify": "2cWBwpqMsDJC1ZUwz813lo",
+		"itunes": "id15477248",
+		"googleplay": "Bastzmooyzgdc6ckls2s7chbtoe",
+		"amazon": "B00EKSLC3M"
+	}],
+	"tags": ["1990s", "2000s", "hardcore"],
+	"related": ["Dr. Dre", "Snoop Dogg", "50 Cent", "Kendrick Lamar"]
+}, {
+	"artist": "Eric B. & Rakim",
+    "songs": [{
+		"name": "Paid In Full",
+		"year": "1987",
+        "album": "Paid In Full",
+		"youtube": "E7t8eoA_1jQ",
+		"spotify": "20s3FayrStM8GY0m4dRFsw",
+		"itunes": "id1081207609",
+		"googleplay": "Bchbfbocodtqypvaqm4hk3mdvs4",
+		"amazon": "B001O3UKZC"
+	}, {
+		"name": "I Ain't No Joke",
+		"year": "1987",
+        "album": "Paid In Full",
+		"youtube": "2TN-kDEKxF0",
+		"spotify": "0SwuCcwpFM6x4cu5zOvmi0",
+		"itunes": "id1081207609",
+		"googleplay": "Bchbfbocodtqypvaqm4hk3mdvs4",
+		"amazon": "B001O3WN02"
+	}, {
+		"name": "Follow The Leader",
+		"year": "1988",
+        "album": "Follow The Leader",
+		"youtube": "95gP3m-uBHA",
+		"spotify": "1p80AptLonBW0VilSi6xFj",
+		"itunes": "id57547430",
+		"googleplay": "Bbfpjcnjhv63skjmdwpwk7ygpji",
+		"amazon": "B000WLQJ2A"
+	}, {
+		"name": "Microphone Fiend",
+		"year": "1988",
+        "album": "Follow The Leader",
+		"youtube": "uPfIIn5V_LQ",
+		"spotify": "0q1UCK426ZMjoNd3DAlzlo",
+		"itunes": "id57547430",
+		"googleplay": "Bbfpjcnjhv63skjmdwpwk7ygpji",
+		"amazon": "B000WLOKSK"
+	}, {
+		"name": "Don't Sweat The Technique",
+		"year": "1992",
+        "album": "Don't Sweat The Technique",
+		"youtube": "6Y1Emb7Jyks",
+		"spotify": "48ZUwXrEOhaXLCxvmRYhZv",
+		"itunes": "id60072?i=60066",
+		"googleplay": "B3bmrpzhdmuftvjmsay6e4xele4",
+		"amazon": "B000WLJE4U"
+	}],
+	"albums": [{
+		"name": "Paid In Full",
+		"year": "1987",
+		"spotify": "3miZDfDnP7SmOXAJXWdFmz",
+		"itunes": "id1081207609",
+		"googleplay": "Bchbfbocodtqypvaqm4hk3mdvs4",
+		"amazon": "B016QL47XM"
+	}, {
+		"name": "Follow The Leader",
+		"year": "1988",
+		"spotify": "3kaiwH8r6Wg62D2CxOr0QH",
+		"itunes": "id57547430",
+		"googleplay": "Bbfpjcnjhv63skjmdwpwk7ygpji",
+		"amazon": "B000WLLAXS"
+	}, {
+		"name": "Let The Rhythm Hit 'Em",
+		"year": "1990",
+		"spotify": "1ITncViMKtjFkJnKxZ5Nkg",
+		"itunes": "id309415617",
+		"googleplay": "Bk44idqxpohz7y5pdkpqoohjlxu",
+		"amazon": "B000002O75"
+	}, {
+		"name": "Don't Sweat The Technique",
+		"year": "1992",
+		"spotify": "5iaxBk4qVHAMp9vtYSoEBM",
+		"itunes": "id60072",
+		"googleplay": "B3bmrpzhdmuftvjmsay6e4xele4",
+		"amazon": "B000WLJF2G"
+	}],
+	"tags": ["1980s", "1990s", "east-coast"],
+	"related": ["Rakim", "Big Daddy Kane", "Boogie Down Productions", "EPMD", "Gang Starr", "Pete Rock & C.L. Smooth", "Kool G Rap & DJ Polo"]
+}, {
+	"artist": "Fat Jon",
+    "songs": [{
+		"name": "Feel The Void",
+		"year": "2002",
+        "album": "Wave Motion",
+		"youtube": "fNo82zDnTRU",
+		"spotify": "5o6WCwKNByv0py1w1zuKw0",
+		"itunes": "id354644182",
+		"googleplay": "B3lpuirhmrer7gabsgzfpjrl3bi",
+		"amazon": "B0037DJ7JW"
+	}, {
+		"name": "Darkness",
+		"year": "2006",
+        "album": "Afterthought",
+		"youtube": "9NROvN5kzmA",
+		"spotify": "2OZG7bazxBc3tQ3NSzPq3B",
+		"itunes": "id354647430",
+		"googleplay": "Bpvqhueo7cy5qlptrerfaydotea",
+		"amazon": "B0037EPULU"
+	}, {
+		"name": "Soundgirl Personal",
+		"year": "2008",
+        "album": "Repaint Tomorrow",
+		"youtube": "Zw8nUE3pRC0",
+		"spotify": "2FYiwgmJZNQFXtvvVQvOdI",
+		"itunes": "id354643663",
+		"googleplay": "Bm6m72quojj2xbjdx26x4bgiwmy",
+		"amazon": "B0037DLLX2"
+	}],
+	"albums": [{
+		"name": "Wave Motion",
+		"year": "2002",
+		"spotify": "3jrK4Zk8jfj5lBa68Fp42m",
+		"itunes": "id354644182",
+		"googleplay": "B3lpuirhmrer7gabsgzfpjrl3bi",
+		"amazon": "B0037DQWFO"
+	}, {
+		"name": "Lightweight Heavy",
+		"year": "2004"
+	}, {
+		"name": "Samurai Champloo Music Record: Departure",
+		"year": "2004",
+		"w": "Nujabes",
+		"amazon": "B001AWUBJM"
+	}, {
+		"name": "Afterthought",
+		"year": "2006",
+		"spotify": "1jF8N2MnRzMyirJIStGx4O",
+		"itunes": "id354647430",
+		"googleplay": "Bpvqhueo7cy5qlptrerfaydotea",
+		"amazon": "B0037EPUJM"
+	}],
+	"tags": ["2000s", "instrumental"],
+	"related": ["Nujabes", "CYNE", "RJD2"]
+}, {
+	"artist": "Freddie Gibbs",
+    "songs": [{
+		"name": "BFK",
+		"year": "2012",
+        "album": "Baby Face Killa",
+		"youtube": "4qgtQBXTI0s",
+		"spotify": "2HxN97yzY9LIn8ePNDDKep",
+		"itunes": "id563367205",
+		"googleplay": "B2lstsddyvragzfvtgk3hutul2y",
+		"amazon": "B009DX016S"
+	}, {
+		"name": "Harold's",
+		"year": "2014",
+        "album": "Piñata",
+		"w": "Madlib",
+		"youtube": "qZqPmUtQs2Q",
+		"spotify": "7udJESHhtJ6k2TW9XfiwES",
+		"itunes": "id826080165",
+		"googleplay": "Btsoebut2wyssyx66b3k77hv7rm",
+		"amazon": "B00J0UUKME"
+	}, {
+		"name": "Deeper",
+		"year": "2014",
+        "album": "Piñata",
+		"w": "Madlib",
+		"youtube": "kGaRbhat-FA",
+		"spotify": "2uB9gUU1HLnHckvK2tylJM",
+		"itunes": "id826080165",
+		"googleplay": "Btsoebut2wyssyx66b3k77hv7rm",
+		"amazon": "B00J0UUJQG"
+	}, {
+		"name": "Fuckin' Up The Count",
+		"year": "2015",
+        "album": "Shadow Of A Doubt",
+		"youtube": "23O2U41p6cY",
+		"spotify": "19qoXk7V1Fs3BV5MkCOaA9",
+		"itunes": "id1053740833",
+		"googleplay": "Bcdn4hybp4yjbhgxt7yhnxicc44",
+		"amazon": "B017CK12AC"
+	}],
+	"albums": [{
+		"name": "Baby Face Killa",
+		"year": "2012",
+		"spotify": "15k8vlPxxEjhpHAxuwSBUh",
+		"itunes": "id563367205",
+		"googleplay": "B2lstsddyvragzfvtgk3hutul2y",
+		"amazon": "B009DX00DW"
+	}, {
+		"name": "Cold Day In Hell ",
+		"year": "2012",
+		"spotify": "6z2F5JAAILOH3nyvNcECy8",
+		"itunes": "id578737601",
+		"googleplay": "B2sdtw7pbuszwjq4pb3mcevcykm",
+		"amazon": "B00AACHZJM"
+	}, {
+		"name": "Piñata",
+		"year": "2014",
+		"w": "Madlib",
+		"spotify": "43uErencdmuTRFZPG3zXL1",
+		"itunes": "id826080165",
+		"googleplay": "Btsoebut2wyssyx66b3k77hv7rm",
+		"amazon": "B00J0UUEPW"
+	}],
+	"tags": ["2010s"],
+	"related": ["Madlib", "Isaiah Rashad", "Jay Rock", "Danny Brown", "Vince Staples", "MF DOOM", "Pusha T"]
+}, {
+	"artist": "Fugees",
+    "songs": [{
+		"name": "Vocab",
+		"year": "1994",
+        "album": "Blunted On Reality",
+		"youtube": "m4t5R3fTbD0",
+		"spotify": "7oSVxGokmrvwMRdM6rcYsC",
+		"itunes": "id169704381",
+		"googleplay": "Bzlkmv4zxt5yau73hfdpvchzbgi",
+		"amazon": "B0013CYIZM"
+	}, {
+		"name": "Ready Or Not",
+		"year": "1996",
+        "album": "The Score",
+		"youtube": "aIXyKmElvv8",
+		"spotify": "3vZO25GdYuqFrR1kzZADnp",
+		"itunes": "id281701670",
+		"googleplay": "Bslu5ymngrz4664olpe3xcoff2m",
+		"amazon": "B001B172N0"
+	}, {
+		"name": "Killing Me Softly",
+		"year": "1996",
+        "album": "The Score",
+		"youtube": "8ppz-cwLeqo",
+		"spotify": "0Q0IVlqMV64kNLlwjPj0Hl",
+		"itunes": "id281701670",
+		"googleplay": "Bslu5ymngrz4664olpe3xcoff2m",
+		"amazon": "B001B1CCDK"
+	}, {
+		"name": "Fu-Gee-La",
+		"year": "1996",
+        "album": "The Score",
+		"youtube": "MPlb9HoOCxs",
+		"spotify": "1rJM37Dd4OcSJvzI84yCcP",
+		"itunes": "id281701670",
+		"googleplay": "Bslu5ymngrz4664olpe3xcoff2m",
+		"amazon": "B001B155NE"
+	}],
+	"albums": [{
+		"name": "The Score",
+		"year": "1996",
+		"spotify": "18XFe4CPBgVezXkxZP6rTb",
+		"itunes": "id281701670",
+		"googleplay": "Bslu5ymngrz4664olpe3xcoff2m",
+		"amazon": "B001B1CBSQ"
+	}],
+	"tags": ["1990s", "alternative"],
+	"related": ["Lauryn Hill", "Wyclef Jean", "The Roots", "The Pharcyde", "OutKast"]
 }]
