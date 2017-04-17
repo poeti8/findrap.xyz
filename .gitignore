@@ -1,1 +1,5 @@
 node_modules
+public/assets/img/albums
+public/assets/img/artists
+public/assets/img/top-10
+server.js

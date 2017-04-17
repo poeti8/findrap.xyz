@@ -7,11 +7,11 @@ import '../css/style.scss';
 import React from 'react';
 import ReactDom from 'react-dom';
 
-// loading react router
+// import react router
 import {Router, Route, Switch} from 'react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-// loading components
+// import components
 import Homepage from './components/Homepage';
 import BestNew from './components/BestNew';
 import Top10Intro from './components/Top10Intro';

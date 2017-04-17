@@ -50,26 +50,26 @@
     transition: all .5s ease;
 }
 
-.media-enter:after {
-    transform: translateZ(0) translateX(0) !important;
+.media-enter {
+    opacity: 0.01;
 }
 
-.media-enter.media-enter-active:after {
-    transform: translateZ(0) translateX(100%) !important;
-    transition: transform .5s ease 1s;
+.media-enter.media-enter-active {
+    opacity: 1;
+    transition: opacity .5s ease;
 }
 
 .media-leave {
     z-index: 999 !important;
 }
 
-.media-leave:after {
-    transform: translateZ(0) translateX(-100%) !important;
+.media-leave {
+    opacity: 1;
 }
 
-.media-leave.media-leave-active:after {
-    transform: translateZ(0) translateX(0) !important;
-    transition: transform 1s ease;
+.media-leave.media-leave-active {
+    opacity: 0.01;
+    transition: opacity .5s ease;
 }
 
 .artist-enter {

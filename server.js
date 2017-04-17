@@ -4,14 +4,23 @@ const axios = require('axios');
 const shuffle = require('shuffle-array');
 const fs = require('fs');
 
+
+// import datas
 const db = require('./data/artists.json');
 const bestNewDb = require('./data/best-new.json');
 const top10Db = require('./data/top10.json');
+
+
+// randomize data
+shuffle(db);
+
 
 const dbLength = db.length;
 let allArtists = [];
 let allTags = [];
 
+
+// store each all tags and artists in arrays
 db.map(item => {
     allArtists.push(item.artist);
     
@@ -21,46 +30,31 @@ db.map(item => {
     });
 });
 
-function noSpaceCase(string) {
-    return string.toLowerCase().replace(/ /g, '-');
-}
-//
-//function getSpotifyId(artist, query, type, songAlbum) {
-//    axios.get(`https://api.spotify.com/v1/search?q=${query}&type=${type}`, {responseType: 'json'})
-//    .then(res => {
-//        const dataType = `${type}s`;
-//        res.data[dataType].items.forEach(item => {
-//            if (noSpaceCase(item.name) === noSpaceCase(query) && noSpaceCase(item.artists[0].name) === noSpaceCase(artist.artist)) {              
-//                if (type === 'album' && item.album_type === "album") {
-//                    return item.id;
-//                } else if (type === 'track' && noSpaceCase(item.album.name) === noSpaceCase(songAlbum)) { 
-//                    fs.appendFile(__dirname + '/data/text.txt', '---' + item.id);
-//                    return item.id;           
-//                } 
-//            }
-//        });
-//    })
-//    .catch(err =>{
-//        console.log(err);
-//    });  
-//}
-//
-//db.map(artist => {
-//    artist.songs.map(song => {
-//        song.spotify = getSpotifyId(artist, song.name,  'track', song.album);
-//    });
-//});
 
+// remove spaces and special characters
+function trimString(string) {
+    return string.toLowerCase().replace(/\s/g, '-').replace(/[.!_&%/:;')(+?,=]/g, '');
+}
+
+// sort tags and artists alphabetically
 allArtists = allArtists.sort((a, b) => a > b);
 allTags = allTags.sort((a, b) => a > b);
 
+
+// create express app
 let app = express();
 
+
+// save assests and index path
 const assetsPath = path.join(`${__dirname}/public`);
 const indexPath = path.join(`${__dirname}/public/index.html`);
 
+
+// make everythin in the assests folder accessible
 app.use(express.static(assetsPath));
 
+
+// response API for best-new request
 app.get('/api/best-new', function(req, res){
     let data = {data: bestNewDb};
     
@@ -75,28 +69,34 @@ app.get('/api/best-new', function(req, res){
     res.json(data);
 });
 
+
+// response API for top-10 request
 app.get('/api/top-10/:name', function(req, res){
-    let name = req.params.name.toLowerCase().replace(/ /g, '-');
+    let name = trimString(req.params.name);
     let data = {data: []};
     
     top10Db.forEach(item => {
        if (name === 'all') {
            data.data.push(item.title);
-       } else if (item.title.toLowerCase().replace(/ /g, '-') === name) {
+       } else if (trimString(item.title) === name) {
             data.data .push(item);
        }
     });
+
+    if (data.data.length <= 0) res.json({data: "error 404", message: "top 10 couldn't be found"});
     
     res.json(data);
 });
 
+
+// response API for tag request
 app.get('/api/tag/:name', function(req, res){
-    let name = req.params.name.toLowerCase().replace(/ /g, '-');
+    let name = trimString(req.params.name);
     let data = {data: []};
     
     if (name === 'all') {
         data.data = allTags;
-        res.json(data); 
+        return res.json(data); 
     }
     
     for (let i=0; i<dbLength; i++) {
@@ -104,6 +104,8 @@ app.get('/api/tag/:name', function(req, res){
             data.data.push(db[i]);
         }
     }
+
+    if (data.data.length <= 0) res.json({data: "error 404", message: "tag couldn't be found"});
     
     if (req.query.random === 'true') {
         shuffle(data.data);
@@ -116,31 +118,45 @@ app.get('/api/tag/:name', function(req, res){
     res.json(data);
 });
 
+
+// response API for artist request
 app.get('/api/artist/:name', function(req, res){
-    let name = req.params.name.toLowerCase().replace(/ /g, '-');
+    let name = trimString(req.params.name);
     let artists = [];
-    let tags = {}; 
+    let tags = [];
     let data = {data: []};
     
     if (name === 'all') {
         data.data = allArtists;
-        res.json(data); 
+        return res.json(data); 
     }
     
+
+    // add artist itself if exist
     for (let i=0; i<dbLength; i++) {
-        if (db[i].artist.toLowerCase().replace(/ /g, '-') === name) {
+        if (trimString(db[i].artist) === name) {
             name = db[i];
             data.data.push(name);
             break;
         }
     }
+
+    // return error if no artist was found
+    if (data.data.length <= 0) res.json({data: "error 404", message: "artist couldn't be found"});
     
+
+
     if (req.query.similar === 'true') {
         artists.push(name.artist);
+
+
+        // add related artists
         name.related.map(item => {
             artists.push(item);
         });
 
+
+        // loop through database for every artist tag and rate artist based on count of similar tags
         for (let i=0; i < dbLength; i++) {
             let count = 0;
             for (let t=0, tLength=name.tags.length; t < tLength; t++) {
@@ -148,27 +164,33 @@ app.get('/api/artist/:name', function(req, res){
                     count++;
                 }
             }
-
-            if (count > 1) {
-                tags[db[i].artist] = count;
-            }
+            if (count > 0 ) {
+                tags.push(`${count}---${db[i].artist}`);
+            }        
         }
 
-        tags = Object.keys(tags).sort((a, b) => {
-            return tags[a] < tags[b];
-        });
 
+        // sort artists based on count of tags
+        tags.sort((a, b) => b.split('---')[0] - a.split('---')[0]);
+
+
+        // add similar tag artists
         for (let i=0, l=tags.length; i<l; i++) {
-            if (!artists.includes(tags[i])) {
-                artists.push(tags[i]);
+            if (!artists.includes(tags[i].split('---')[1])) {
+                artists.push(tags[i].split('---')[1]);
             }
         }
-        
-        for (i=0; i < dbLength; i++) {
-            for (let a=0, l=artists.length; a<l; a++) {
-                if (db[i].artist === artists[a] && db[i].artist !== name.artist) {
+
+
+        artists.splice(10);
+
+
+        // add every artists from artists array to the final data
+        for (let a=0, l=artists.length; a<l; a++) {
+            for (let i=0; i < dbLength; i++) {
+               if (db[i].artist === artists[a] && db[i].artist !== name.artist) {
                     data.data.push(db[i]);
-                }
+                } 
             }
         }
     }
@@ -180,6 +202,8 @@ app.get('/api/artist/:name', function(req, res){
     res.json(data);
 });
 
+
+// send index.html for every page
 app.get('/*', function(req, res){
     res.sendFile(indexPath);
 });

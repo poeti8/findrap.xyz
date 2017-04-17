@@ -26,11 +26,23 @@
         li {
             padding: 0;
             margin-bottom: 3em;
+
+            @media only screen and (max-width: 550px) {
+                margin-bottom: 1em;
+            }
             
             a {
                 font-weight: 800;
                 font-size: 6em;
                 letter-spacing: -.05em;
+
+                @media only screen and (max-width: 770px) {
+                    font-size: 5em;
+                }
+
+                @media only screen and (max-width: 550px) {
+                    font-size: 4em;
+                }
                 
                 &:hover {
                     opacity: .6;
@@ -47,9 +59,14 @@
     justify-content: center;
     right: 0;
     top: 0;
-    width: 6vw;
-    height: 4vw;
+    width: 6em;
+    height: 4em;
     z-index: 9999;
+
+    @media only screen and (max-width: 1500px) {
+        width: 7em;
+        height: 5em;
+    }
     
     a.open {
         display: block;
@@ -96,16 +113,20 @@
 }
 
 a.nav-next {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     top: 0;
     right: 0;
-    width: 7vw;
+    width: 8vw;
     height: 100vh;
     background: linear-gradient(to left, rgba(black, .2), transparent);
     z-index: 9;
+
+    @media only screen and (max-width: 1024px) {
+        width: 8vw;
+    }
     
     img {
         width: 12%;
@@ -113,6 +134,14 @@ a.nav-next {
         margin-right: 1.5em;
         opacity: .4;
         @include transition(all .3s $ease);
+
+        @media only screen and (max-width: 1500px) {
+            width: 14%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            width: 20%;
+        }
     }
     
     &:hover {
@@ -135,6 +164,14 @@ a.nav-prev {
         width: 12%;
         margin: 0 0 0 1.5em;
         transform: rotate(180deg);
+
+        @media only screen and (max-width: 1500px) {
+            width: 14%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            width: 20%;
+        }
     }
     
     &:hover img {

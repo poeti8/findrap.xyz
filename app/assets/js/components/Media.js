@@ -3,16 +3,20 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Stores from './Stores';
 
+import { trimString } from '../custom';
+
 const Media = (props) => {
     
-    let mediaType = props.media;
-    let imgName = props.img;
+    const mediaType = props.media;
+    const imgName = props.img;
+    const type = props.img === props.artist ? 'artists' : 'albums';
     let media; 
-    
+
+    // detect if media tyoe is image or video and show them
     if (mediaType === 'img') {
-        media = <div key={imgName.toLowerCase().replace(/ /g, '-')}><img src={`/assets/img/artists/${imgName.toLowerCase().replace(/ /g, '-')}.jpg`} alt={imgName} /></div>;
+        media = <div key={trimString(imgName)}><img src={`/assets/img/${type}/${trimString(imgName)}.jpg`} alt={imgName} /></div>;
     } else if (mediaType === 'video') {
-        media = <div key={props.youtube}> <iframe key={props.youtube} width="560" height="315" src={`https://www.youtube.com/embed/${props.youtube}`} frameBorder="0" allowFullScreen></iframe></div>
+        media = <div key={props.youtube} className="youtube-player"> <iframe key={props.youtube} width="560" height="315" src={`https://www.youtube.com/embed/${props.youtube}`} frameBorder="0" allowFullScreen></iframe></div>
     }
 
     return (
@@ -20,8 +24,8 @@ const Media = (props) => {
             <ReactCSSTransitionGroup className="media mouse-move"
                                      component="div"
                                      transitionName="media"
-                                     transitionEnterTimeout={1700}
-                                     transitionLeaveTimeout={1000}>
+                                     transitionEnterTimeout={500}
+                                     transitionLeaveTimeout={500}>
                 {media}
             </ReactCSSTransitionGroup> 
             <Stores stores={props.stores} media={props.media} />

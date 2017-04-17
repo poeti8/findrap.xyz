@@ -9,20 +9,23 @@
 		"amazon": "B00000JG2O"
 	}
     }, {
-	"artist": "Run The Jewels",
+	"artist": "Migos",
 	"album": {
-		"name": "RTJ3",
-		"spotify": "fffffffff",
-		"googleplay": "Bhk233rb7jxn7kgcwyzvtpiltvi",
-		"amazon": "B00000JG2O"
+		"name": "Culture",
+		"spotify": "2AvupjUeMnSffKEV05x222",
+		"itunes": "id1192538488",
+		"googleplay": "Be37vxehopox3zjyflgefcu6opy",
+		"amazon": "B01MR36TIW"
 	}
     }, {
-	"artist": "2Pac",
+	"artist": "Run the Jewels",
 	"album": {
-		"name": "All Eyez On Me",
-		"spotify": "fffffffff",
-		"googleplay": "Bhk233rb7jxn7kgcwyzvtpiltvi",
-		"amazon": "B00000JG2O"
+		"name": "Run the Jewels 3",
+		"youtube": "vWaljXUiCaE",
+		"spotify": "4RnfMhMUMqHlrn4V6A3KfS",
+		"itunes": "id1186542356",
+		"googleplay": "Babd2uvkbuienhcq4vxcbg2qtmq",
+		"amazon": "B01NAJDYUF"
 	}
     }
 ]

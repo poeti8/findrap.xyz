@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
+// import compponents
 import Menu from './Menu';
 import Nav from './Nav';
 import Media from './Media';
 import BestNewIntro from './BestNewIntro';
 import BestNewList from './BestNewList';
 
-import axios from 'axios';
-import custom from '../custom';
 
+// import libraries and scripts
+import axios from 'axios';
+import { moveElements, toggleMenu, trimString } from '../custom';
+
+
+// create BestNew component
 class BestNew extends React.Component {
     constructor() {
         super();
@@ -35,7 +41,11 @@ class BestNew extends React.Component {
         this.changeArtist = this.changeArtist.bind(this);
     }
     
+
     componentWillMount() {
+        document.title = 'Best New Hip-Hop Albums';
+
+        // get data from API
         axios.get(`/api/best-new`, {responseType: 'json'})
         .then(res => {
             this.setState({
@@ -51,6 +61,7 @@ class BestNew extends React.Component {
             });
         });
         
+        // get all artists from API
         axios.get('/api/artist/all', {responseType: 'json'})
         .then(res => {
             this.setState({
@@ -59,6 +70,8 @@ class BestNew extends React.Component {
         });
     }
     
+
+    // hide intro page when clicked
     hideIntro(e) {
         e.preventDefault();
         
@@ -66,16 +79,19 @@ class BestNew extends React.Component {
            intro: false 
         });
         
-        custom.moveElements();
-        custom.toggleMenu();
+        moveElements();
+        toggleMenu();
     }
     
+
+    // change artist when nav is used
     changeArtist(e) {
         e.preventDefault();
         if (this.state.clickable === false) return;
         
         let index;
-        
+
+        // detect if change is next or previous artist
         const type = e.target.getAttribute('data-type');
         if (type === 'next') {
             index = this.state.index + 1
@@ -100,12 +116,13 @@ class BestNew extends React.Component {
             this.setState({
                 clickable: true
             });
-        }, 1700);
+        }, 1000);
     }
     
     render() {
         if (this.state.loading === true) return null;
         
+        // detect if should display intro component or best new albums component
         const isIntro = this.state.intro;
         let media, nav, content;
         if (isIntro) {
@@ -148,22 +165,24 @@ class BestNew extends React.Component {
     }
     
     componentDidMount() {
+        // if page is not loading then load custom move elements and menu functions
         if (this.state.loading === true) {
             let interval = setInterval(() => {
                 if (this.state.loading === false) {
-                    custom.toggleMenu();  
+                    toggleMenu();  
                     clearInterval(interval);
                 }
             }, 500);  
         } else {
-            custom.toggleMenu();
+            toggleMenu();
         }  
     }
     
     componentDidUpdate() {
+        // invoke custom functions if it's not intro page
         if (!this.state.script && !this.state.intro) {
-            custom.moveElements();
-            custom.toggleMenu();
+            moveElements();
+            toggleMenu();
 
             this.setState({
                 script: true

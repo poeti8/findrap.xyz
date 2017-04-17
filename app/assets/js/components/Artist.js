@@ -1,24 +1,31 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
+// import compponents
 import Menu from './Menu';
 import Nav from './Nav';
 import Media from './Media';
 import ArtistLists from './ArtistLists';
 import ArtistTags from './ArtistTags';
 
-import axios from 'axios';
-import custom from '../custom';
 
+// import libraries and scripts
+import axios from 'axios';
+import { moveElements, toggleMenu, trimString } from '../custom';
+
+
+// create Artist component
 class Artist extends React.Component {
     constructor() {
         super();
+
         this.state = {
-            artists: [],
+            artists: [], // store artists
             loading: true,
             clickable: true,
             index: 0,
-            media: 'img',
+            media: 'img', // img or video
             img: '',
             youtube: '',
             stores: {
@@ -28,15 +35,20 @@ class Artist extends React.Component {
                 amazon: ''
             }
         }
+
         this.changeArtist = this.changeArtist.bind(this);
         this.updateMedia = this.updateMedia.bind(this);
         this.goToTag = this.goToTag.bind(this);
     }
 
+
     componentWillMount() {
+        // get URL parameters
         const page = this.props.match.params.page;
         const name = this.props.match.params.name;
 
+
+        // get data from API
         axios.get(`/api/${page}/${name}?similar=true&random=true`, { responseType: 'json' })
             .then(res => {
                 this.setState({
@@ -44,16 +56,29 @@ class Artist extends React.Component {
                     img: res.data.data[0].artist,
                     loading: false
                 });
+
+
+                // update page title
+                if (page === 'artist') {
+                    document.title = this.state.artists[this.state.index].artist + ' | Dope Albums & Songs';
+                } else if (page === 'tag') {
+                    document.title = name + ' | Dope Hip-Hop Albums & Songs';
+                }
+                
             })
             .catch(err => {
                 this.props.history.push('/404');
             });
     }
 
+
+    // update the image or video
     updateMedia(e) {
         e.preventDefault();
         if (this.state.clickable === false) return;
 
+
+        // select all albums and songs list
         const links = document.querySelectorAll('a');
         Array.prototype.forEach.call(links, item => {
             item.classList.remove('active');
@@ -61,6 +86,8 @@ class Artist extends React.Component {
 
         e.target.classList.add('active');
 
+
+        // detect if the new media is image or video
         let item;
         let media;
         let img;
@@ -73,6 +100,8 @@ class Artist extends React.Component {
             img = item.name;
         }
 
+        
+        // update state
         this.setState({
             clickable: false,
             media: media,
@@ -86,15 +115,20 @@ class Artist extends React.Component {
             }
         });
 
+
         const clickable = setTimeout(() => {
             this.setState({
                 clickable: true
             });
-        }, 1700);
+        }, 400);
     }
 
+
+    // update page when clicked on tag
     goToTag(e) {
         e.preventDefault();
+
+        // update page
         const tag = e.target.innerHTML;
         this.props.history.push(e.target.getAttribute('href'));
 
@@ -103,10 +137,12 @@ class Artist extends React.Component {
         });
     }
 
+    // change artist when nav is used
     changeArtist(e) {
         e.preventDefault();
         if (this.state.clickable === false) return;
 
+        // detect if change is next or previous artist
         const type = e.target.getAttribute('data-type');
         if (type === 'next') {
             this.setState({
@@ -136,7 +172,7 @@ class Artist extends React.Component {
             this.setState({
                 clickable: true
             });
-        }, 1700);
+        }, 1000);   
     }
 
     render() {
@@ -158,6 +194,7 @@ class Artist extends React.Component {
                     artists={this.state.artists} />
 
                 <Media stores={this.state.stores}
+                    artist={this.state.artists[this.state.index].artist}
                     media={this.state.media}
                     img={this.state.img}
                     youtube={this.state.youtube} />
@@ -168,7 +205,7 @@ class Artist extends React.Component {
                     transitionEnterTimeout={1000}
                     transitionLeaveTimeout={1000}>
 
-                    <div key={this.state.artists[this.state.index].artist.toLowerCase().replace(/ /g, '-')} className="artist-info">
+                    <div key={trimString(this.state.artists[this.state.index].artist)} className="artist-info">
                         <h2>
                             {this.state.artists[this.state.index].artist}
                         </h2>
@@ -195,20 +232,24 @@ class Artist extends React.Component {
         )
     }
 
+
     componentDidMount() {
+        // if page is not loading then load custom move elements and menu functions
         if (this.state.loading === true) {
             let interval = setInterval(() => {
                 if (this.state.loading === false) {
-                    custom.moveElements();
-                    custom.toggleMenu();
+                    moveElements();
+                    toggleMenu();
                     clearInterval(interval);
                 }
             }, 500);
         } else {
-            custom.moveElements();
-            custom.toggleMenu();
+            moveElements();
+            toggleMenu();
         }
 
+
+        // listen for URL changes and update the page
         this.props.history.listen(location => {
             const path = location.pathname;
 

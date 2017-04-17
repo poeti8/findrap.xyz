@@ -17,7 +17,7 @@ class Menu extends React.Component {
                     <ul>
                         <li><a onClick={this.goToPage.bind(this)} href="/">discover</a></li>
                         <li><a onClick={this.goToPage.bind(this)} href="/best-new">best new</a></li>
-                        <li><a onClick={this.goToPage.bind(this)} href="/top-10">top 10s</a></li>
+                        {/*<li><a onClick={this.goToPage.bind(this)} href="/top-10">top 10s</a></li>*/}
                         <li><a onClick={this.goToPage.bind(this)} href="#">github</a></li>
                     </ul>
                 </nav>

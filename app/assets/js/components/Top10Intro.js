@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
+// import compponents
 import Menu from './Menu';
 import Nav from './Nav';
 
+
+// import libraries and scripts
 import axios from 'axios';
-import custom from '../custom';
+import { moveElements, toggleMenu, trimString } from '../custom';
+
 
 class Top10Intro extends React.Component {
     constructor() {
@@ -22,22 +27,29 @@ class Top10Intro extends React.Component {
     }
     
     componentWillMount() {
+        document.title = 'Top 10 Hip-Hop Albums & Songs';
+
+        // get list of all top 10s from the API
         axios.get(`/api/top-10/all`, {responseType: 'json'})
         .then(res => {
             this.setState({
                 top10s: res.data.data,
                 img: res.data.data[0],
                 loading: false
-            });
+            }); 
         });
     }
     
+
+    // change top 10 when nav is used
     changeArtist(e) {
         e.preventDefault();
         if (this.state.clickable === false) return;
         
         let index;
         
+
+        // detect if change is next or previous top 10
         const type = e.target.getAttribute('data-type');
         if (type === 'next') {
             index = this.state.index + 1
@@ -55,10 +67,11 @@ class Top10Intro extends React.Component {
             this.setState({
                 clickable: true
             });
-            custom.moveElements();
-            custom.toggleMenu();
+            moveElements();
+            toggleMenu();
         }, 1100);
     }
+
     
     render() {
         if (this.state.loading === true) return null;
@@ -86,9 +99,9 @@ class Top10Intro extends React.Component {
                     transitionEnterTimeout={1100}
                     transitionLeaveTimeout={500}>
                     
-                   <a href={`/top-10/top/${this.state.img.toLowerCase().replace(/ /g, '-')}`} key={this.state.img.toLowerCase().replace(/ /g, '-')} className="mouse-move">
+                   <a href={`/top-10/top/${trimString(this.state.img)}`} key={trimString(this.state.img)} className="mouse-move">
                         <div className="top10-media">
-                            <img src={`/assests/img/artists/${this.state.img.toLowerCase().replace(/ /g, '-')}.jpg`} alt={this.state.img} /> 
+                            <img src={`/assets/img/top-10/${trimString(this.state.img)}.jpg`} alt={this.state.img} /> 
                         </div>
                         <div className="top10-title">
                             <h1>
@@ -102,18 +115,20 @@ class Top10Intro extends React.Component {
         )
     }
     
+
     componentDidMount() {
+        // if page is not loading then load custom move elements and menu functions
         if (this.state.loading === true) {
             let interval = setInterval(() => {
                 if (this.state.loading === false) {
-                    custom.moveElements();
-                    custom.toggleMenu();  
+                    moveElements();
+                    toggleMenu();  
                     clearInterval(interval);
                 }
             }, 500);  
         } else {
-            custom.moveElements();
-            custom.toggleMenu();
+            moveElements();
+            toggleMenu();
         }  
     }
 }

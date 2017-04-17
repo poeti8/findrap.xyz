@@ -5,7 +5,7 @@
   "description": "Discover dope Hip-Hop music",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "webpack --config webpack.config.js --watch",
+    "build": "webpack --config webpack.config.prod.js -p",
     "start": "node server.js"
   },
   "dependencies": {

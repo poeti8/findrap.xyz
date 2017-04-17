@@ -4,6 +4,20 @@
     align-items: center;
     flex: .5;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1024px) {
+        height: 100%;
+        flex: 0 0 100%;
+        padding: 0;  
+        @include skewY(0);
+    }
+
+    > * {
+
+        @media only screen and (max-width: 1024px) {
+            @include skewY(0);
+        }
+    }
    
     a {
         @include transition(all .2s $ease);
@@ -11,6 +25,11 @@
         h1 {
             font-size: 7rem;
             line-height: 1.1;
+
+            @media only screen and (max-width: 770px) {
+                font-size: 4.5em;
+                padding: .5em;
+            }
         }
         
         &:hover {

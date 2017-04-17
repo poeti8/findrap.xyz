@@ -39,6 +39,40 @@ body {
     background: url('../img/background.jpg') repeat fixed 0 0px;
     animation: bg-position 15s linear infinite;
     transform: translateZ(0);
+
+    @media only screen and (max-width: 1750px) {
+        font-size: #{$font-size * .88};
+    }
+
+    @media only screen and (max-width: 1600px) {
+        font-size: #{$font-size * .84};
+    }
+
+    @media only screen and (max-width: 1500px) {
+        font-size: #{$font-size * .82};
+    }
+
+    @media only screen and (max-width: 1400px) {
+        font-size: #{$font-size * .82};
+    }
+
+    @media only screen and (max-width: 1350px) {
+        font-size: #{$font-size * .78};
+    }
+
+    @media only screen and (max-width: 1250px) {
+        font-size: #{$font-size * .75};
+    }
+
+    @media only screen and (max-width: 1024px) {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
+    @media only screen and (max-width: 730px) {
+        font-size: #{$font-size * .8};
+    }
 }
 
 
@@ -62,8 +96,16 @@ body:before {
     bottom: 0;
     height: 100vh;
     display: block;
-    background: linear-gradient(to top, rgba(black, .6), transparent);
+    background: linear-gradient(to top, rgba(black, .8), transparent);
     z-index: -1;
+}
+
+#app {
+    position: relative;
+    height: 100vh;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .wrapper {
@@ -74,6 +116,30 @@ body:before {
     align-items: center;
     padding: 0 2.5em 0 5em;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1500px) {
+        padding: 0 1em 0 3em;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        padding: 0 1em 0 3em;
+    }
+
+    @media only screen and (max-width: 1250px) {
+        padding: 0 1em 0 1.5em;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        position: relative;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 1em 0;
+    }
+
+    @media only screen and (max-width: 730px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -84,7 +150,23 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 5.2rem;
+    font-size: 5.2em;
+
+    @media only screen and (max-width: 1400px) {
+        font-size: 4.8em;
+    }
+
+    @media only screen and (max-width: 1250px) {
+        font-size: 4.4em;
+    }
+
+    @media only screen and (max-width: 720px) {
+        font-size: 3.2em;
+    }
+
+    @media only screen and (max-width: 520px) {
+        font-size: 2.8em;
+    }
 }
 
 a {
@@ -93,11 +175,11 @@ a {
 }
 
 ::-webkit-input-placeholder { 
-    color: white;
+    color: rgba(white, .7);
 }
 
 ::-moz-input-placeholder { 
-    color: white;
+    color: rgba(white, .7);
 }
 
 input:focus::-webkit-input-placeholder { 

@@ -1,20 +1,27 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
+// import libraries and scripts
+import { trimString } from '../custom';
 import axios from 'axios';
 
+
+// create Find component
 class Find extends React.Component {
     constructor() {
         super();
         
         this.state = {
-            artists: [],
-            value: '',
-            suggestion: []
+            artists: [], // list of all artist names
+            value: '', // the value user typed
+            suggestion: [] // list of suggestions
         }
     }
     
+
     componentWillMount() {
+        // get all artists list from API
         axios.get('/api/artist/all', {responseType: 'json'})
         .then(res => {
             this.setState({
@@ -23,14 +30,17 @@ class Find extends React.Component {
         })
     }
     
+
+    // go to artist when form is submitted
     goToArtist(e) {
         e.preventDefault();
         let artists = this.state.artists;
         let value = this.state.value;
         
+        // if value was found in the artists list go to the artist's page
         artists.forEach(name => {
             if (name.toLowerCase() === value.toLowerCase()) {
-                value = value.replace(/ /g, "-")
+                value = trimString(value)
                 this.props.history.push(`/artist/${value}`);
                 return;
            }
@@ -38,17 +48,22 @@ class Find extends React.Component {
         
         this.refs.noArtistMsg.classList.add('active');
     }
-    
+
+
+    // update page when clicked on tag
     goToTag(e) {
         e.preventDefault();
         this.props.history.push(e.target.getAttribute('href'));
     }
-    
+
+
+    // update value state when user types
     updateValue(e) {
         if (this.state.value.length > 1) {
             this.refs.suggestionsWrapper.classList.add('active'); 
         }
         
+        // find suggestion based on value entered by user
         const suggest = this.state.artists.filter(item => {
             return item.toLowerCase().includes(e.target.value.toLowerCase()) && e.target.value.length > 0;
         });
@@ -61,6 +76,8 @@ class Find extends React.Component {
         this.refs.noArtistMsg.classList.remove('active');
     }
     
+
+    // fill the input with suggestion
     fillInput(e) {
         this.setState({
             value: e.target.innerHTML
@@ -69,10 +86,14 @@ class Find extends React.Component {
         this.refs.suggestionsWrapper.classList.remove('active');
     }
     
+
+    // show all tags
     renderTags(tag) {
         return <li key={tag}><a onClick={this.goToTag.bind(this)} href={`/tag/${tag}`}>{tag}</a></li>
     }
     
+
+    // detect either should select suggetion or go to entered value when users hits enter 
     enterKey(e) {
         if (e.charCode === 13 && 
             this.state.suggestion[0].toLowerCase() !== 
@@ -87,6 +108,7 @@ class Find extends React.Component {
         }
     }
     
+
     render() {
         
         let suggests;
@@ -123,7 +145,7 @@ class Find extends React.Component {
                 <ul className="tags white-tags">
                     <li><a onClick={this.goToTag.bind(this)} href="/random">Random</a></li>
                     <li><a onClick={this.goToTag.bind(this)} href="/best-new">Best new</a></li>
-                    <li><a onClick={this.goToTag.bind(this)} href="/top-10">Top 10</a></li>
+                    {/*<li><a onClick={this.goToTag.bind(this)} href="/top-10">Top 10</a></li>*/}
                 </ul>
                 <ul className="tags">
                     <li><a onClick={this.goToTag.bind(this)} href="/tag/1980s">1980's</a></li>

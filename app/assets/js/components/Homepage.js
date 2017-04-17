@@ -1,15 +1,15 @@
 // loading react
 import React from 'react';
 
-// get axios library for requests 
-import axios from 'axios';
-
-// loading components
+// import components
 import Intro from './Intro';
 import Find from './Find';
 
-// custom vanilla js to create moving animations and toggle menu
-import custom from '../custom';
+// get axios library for requests 
+import axios from 'axios';
+
+// import custom vanilla js to create moving animations and toggle menu
+import { moveElements, toggleMenu } from '../custom';
 
 class Homepage extends React.Component {
     constructor() {
@@ -20,6 +20,7 @@ class Homepage extends React.Component {
     }
     
     componentWillMount() {
+        // get list of all tags from API
         axios.get('/api/tag/all', {responseType: 'json'})
         .then(res => {
             this.setState({
@@ -38,8 +39,8 @@ class Homepage extends React.Component {
     }
     
     componentDidMount() {
-        custom.moveElements();
-        custom.toggleMenu();
+        moveElements();
+        toggleMenu();
     }
 }
 
