@@ -1,9 +1,9 @@
-**findrap.xyz** helps you discover dope hip-hop music based on decades, sub-genres or similar artists. Only artists that had at least one great album are included in the database.
+[**findrap.xyz**](//findrap.xyz) helps you discover dope hip-hop music based on decades, sub-genres or similar artists. Only artists that had at least one great album are included in the database.
 
 If you think an artist is missing or the database is incomplete you can contribute or [open an issue](https://github.com/poeti8/findrap.xyz/issues).
 
 # API
-You can get FindRap dope albums & songs by requesting data via below URLs. 
+You can get FindRap dope albums and songs by requesting data via below URLs. 
 
 ### All Artists
 ```
