@@ -1,31 +1,33 @@
 [
-    {
-	"artist": "Pink Guy",
-	"album": {
-		"name": "Pink Season",
-		"spotify": "0xwxoALWTPNBxB6Xq9Fy66",
-		"itunes": "id282855712",
-		"googleplay": "Bhk233rb7jxn7kgcwyzvtpiltvi",
-		"amazon": "B00000JG2O"
+	{
+		"artist": "Kendrick Lamar",
+		"album": {
+			"name": "DAMN.",
+			"spotify": "4eLPsYPBmXABThSJ821sqY",
+			"itunes": "id1223618217",
+			"googleplay": "Bwj4cpxbxjnarequw2jkj5c3a5u",
+			"amazon": "B06ZXSPGB5"
+		}
+	},
+	{
+		"artist": "Migos",
+		"album": {
+			"name": "Culture",
+			"spotify": "2AvupjUeMnSffKEV05x222",
+			"itunes": "id1192538488",
+			"googleplay": "Be37vxehopox3zjyflgefcu6opy",
+			"amazon": "B01MR36TIW"
+		}
+	},
+	{
+		"artist": "Run the Jewels",
+		"album": {
+			"name": "Run the Jewels 3",
+			"youtube": "vWaljXUiCaE",
+			"spotify": "4RnfMhMUMqHlrn4V6A3KfS",
+			"itunes": "id1186542356",
+			"googleplay": "Babd2uvkbuienhcq4vxcbg2qtmq",
+			"amazon": "B01NAJDYUF"
+		}
 	}
-    }, {
-	"artist": "Migos",
-	"album": {
-		"name": "Culture",
-		"spotify": "2AvupjUeMnSffKEV05x222",
-		"itunes": "id1192538488",
-		"googleplay": "Be37vxehopox3zjyflgefcu6opy",
-		"amazon": "B01MR36TIW"
-	}
-    }, {
-	"artist": "Run the Jewels",
-	"album": {
-		"name": "Run the Jewels 3",
-		"youtube": "vWaljXUiCaE",
-		"spotify": "4RnfMhMUMqHlrn4V6A3KfS",
-		"itunes": "id1186542356",
-		"googleplay": "Babd2uvkbuienhcq4vxcbg2qtmq",
-		"amazon": "B01NAJDYUF"
-	}
-    }
 ]

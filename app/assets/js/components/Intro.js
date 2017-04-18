@@ -22,13 +22,7 @@ const Intro = () =>
         <div className="social">
             <ul>
                 <li>
-                   <a href="#">
-                        <img src="assets/img/telegram.svg" alt="telegram" />
-                        Telegram
-                    </a>
-                </li>
-                <li>
-                   <a href="#">
+                   <a href="https://github.com/poeti8/findrap.xyz" target="_blank">
                         <img src="assets/img/github.svg" alt="github" />
                         GitHub
                     </a>

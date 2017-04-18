@@ -7953,16 +7953,6 @@
 			"amazon": "B00BYOQGRC"
 		},
 		{
-			"name": "Money Trees",
-			"year": "2012",
-			"album": "Good Kid, M.A.A.D City",
-			"youtube": "NtxmnBQmfZs",
-			"spotify": "2HbKqm4o0w5wEeEFXm2sD4",
-			"itunes": "id659219035",
-			"googleplay": "Buk4mecw4rpdfiwsvx2jmvcziuy",
-			"amazon": "B00BYOQJ1K"
-		},
-		{
 			"name": "Alright",
 			"year": "2015",
 			"album": "To Pimp A Butterfly",
@@ -7981,6 +7971,16 @@
 			"itunes": "id974112072",
 			"googleplay": "Bxno4dwxtvymibbibjafrmsk5fi",
 			"amazon": "B00UR99CZI"
+		},
+		{
+			"name": "HUMBLE.",
+			"year": "2017",
+			"album": "DAMN.",
+			"youtube": "tvTRZJ-4EyI",
+			"spotify": "31c9IHwCIONmUYW0jL7Riz",
+			"itunes": "id1223618217",
+			"googleplay": "Bwj4cpxbxjnarequw2jkj5c3a5u",
+			"amazon": "B06XXSHW91"
 		}
 	],
 	"albums": [
@@ -8015,6 +8015,14 @@
 			"itunes": "id1089859446",
 			"googleplay": "Biejvtm7n66zmarjbntxyavlf3q",
 			"amazon": "B01CI5754I"
+		},
+		{
+			"name": "DAMN.",
+			"year": "2017",
+			"spotify": "4eLPsYPBmXABThSJ821sqY",
+			"itunes": "id1223618217",
+			"googleplay": "Bwj4cpxbxjnarequw2jkj5c3a5u",
+			"amazon": "B06ZXSPGB5"
 		}
 	],
 	"tags": [

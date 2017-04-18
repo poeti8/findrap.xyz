@@ -50,7 +50,7 @@ class BestNew extends React.Component {
         .then(res => {
             this.setState({
                 artists: res.data.data,
-                img: res.data.data[0].artist,
+                img: res.data.data[0].album.name,
                 loading: false,
                 stores: {
                     spotify: res.data.data[0].album.spotify || '',
@@ -102,7 +102,7 @@ class BestNew extends React.Component {
         this.setState({
             clickable: false,
             index: index,
-            img: this.state.artists[index].artist,
+            img: this.state.artists[index].album.name,
             media: 'img',
             stores: {
                 spotify: this.state.artists[index].album.spotify || '',
@@ -131,6 +131,7 @@ class BestNew extends React.Component {
             content = <BestNewIntro hideIntro={this.hideIntro} />  
         } else {
             media = <Media stores={this.state.stores} 
+                           artist={this.state.artists[this.state.index].artist}
                            media={this.state.media} 
                            img={this.state.img}
                            youtube={this.state.youtube} />

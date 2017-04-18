@@ -29,7 +29,8 @@ function toggleMenu() {
     const navLinks = document.querySelectorAll('#menu a img');
     const navContent = document.getElementById('menu-content');
 
-    function toggleMenu(e) {
+    function toggle(e) {
+        if (e.target.innerHTML === "github") return true;
         e.preventDefault();
         if (e.target !== this) return;
         navContent.classList.toggle('active');
@@ -37,11 +38,11 @@ function toggleMenu() {
     }
 
     for (let i=0; i<navLinks.length; i++) {
-        navLinks[i].addEventListener('click', toggleMenu);
+        navLinks[i].addEventListener('click', toggle);
     }
 
     if (nav && navContent) {    
-        navContent.addEventListener('click', toggleMenu);  
+        navContent.addEventListener('click', toggle);  
     }   
 }
 

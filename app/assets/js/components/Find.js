@@ -139,11 +139,11 @@ class Find extends React.Component {
                     <div className="input-divider"></div>
                     <p>enter a dope artist's name or:</p>
                     <div ref="suggestionsWrapper" className="suggestions">{suggests}</div>
-                    <div ref="noArtistMsg" className="no-artist"><p>No such an artist. Either the artist is not dope enough or our database is incomplete. <a href="#"><strong>Help us make it complete</strong></a></p></div>
+                    <div ref="noArtistMsg" className="no-artist"><p>No such an artist. Either the artist is not dope enough or our database is incomplete. <a href="https://github.com/poeti8/findrap.xyz"><strong>Help us make it complete</strong></a></p></div>
                 </form>
 
                 <ul className="tags white-tags">
-                    <li><a onClick={this.goToTag.bind(this)} href="/random">Random</a></li>
+                    <li><a onClick={this.goToTag.bind(this)} href="/artist/random">Random</a></li>
                     <li><a onClick={this.goToTag.bind(this)} href="/best-new">Best new</a></li>
                     {/*<li><a onClick={this.goToTag.bind(this)} href="/top-10">Top 10</a></li>*/}
                 </ul>

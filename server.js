@@ -50,6 +50,14 @@ const assetsPath = path.join(`${__dirname}/public`);
 const indexPath = path.join(`${__dirname}/public/index.html`);
 
 
+// return gzip for js files
+app.get('*.js', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  next();
+});
+
+
 // make everythin in the assests folder accessible
 app.use(express.static(assetsPath));
 
@@ -65,7 +73,7 @@ app.get('/api/best-new', function(req, res){
     if (req.query.limit) {
         data.data.splice(req.query.limit);
     }
-    
+
     res.json(data);
 });
 
@@ -128,6 +136,11 @@ app.get('/api/artist/:name', function(req, res){
     
     if (name === 'all') {
         data.data = allArtists;
+        return res.json(data); 
+    }
+
+    if (name === 'random') {
+        data.data = [db[Math.floor(Math.random() * dbLength) + 1]];
         return res.json(data); 
     }
     
@@ -208,4 +221,4 @@ app.get('/*', function(req, res){
     res.sendFile(indexPath);
 });
 
-app.listen(3000);
+app.listen(8080);
