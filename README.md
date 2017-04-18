@@ -49,3 +49,6 @@ Note that the count of dope songs should be one more than dope albums count at m
 
 #### How to know if an artist or an album is dope?
 Based on if it is both critically and fan acclaimed.
+
+#### Credits
+The music icon is from [flaticon.com](http://www.flaticon.com/).
