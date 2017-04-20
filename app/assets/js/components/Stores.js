@@ -9,7 +9,7 @@ const Stores = (props) => {
     let googleplay = props.stores.googleplay === '' ? '' : 
         <li key="googleplay"><a href={`//play.google.com/store/music/album?id=${props.stores.googleplay}`} target="_blank"><img src="/assets/img/googleplay.svg" alt="googleplay" /> Google Play</a></li>;
     let amazon = props.stores.amazon === '' ? '' : 
-        <li key="amazon"><a href={`//www.amazon.co.uk/dp/${props.stores.amazon}/`} target="_blank"><img src="/assets/img/amazon.svg" alt="amazon" /> Amazon</a></li>;
+        <li key="amazon"><a href={`//www.amazon.com/dp/${props.stores.amazon}/`} target="_blank"><img src="/assets/img/amazon.svg" alt="amazon" /> Amazon</a></li>;
         
     return (
         <ReactCSSTransitionGroup className="stores" 
