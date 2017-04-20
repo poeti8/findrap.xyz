@@ -49,7 +49,7 @@ http://findrap.xyz/api/tag/TAG_NAME
 
 # Contribute
 
-Open [artists.json](https://github.com/poeti8/findrap.xyz/blob/master/artists.json) and add the new data. The whole data is an array of artists which each one has:
+Open [artists.json](https://github.com/poeti8/findrap.xyz/blob/master/data/artists.json) or [best-new.json](https://github.com/poeti8/findrap.xyz/blob/master/data/best-new.json) and add the new data. The whole data is an array of artists which each one has:
 
 ```artist```  artist's name
 
