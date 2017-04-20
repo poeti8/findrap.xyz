@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Pouria Ezzati <ezzati.upt@gmail.com>",
   "description": "Discover dope Hip-Hop music",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "webpack --config webpack.config.js -p",
     "start": "node server.js"
