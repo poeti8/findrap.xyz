@@ -10,6 +10,10 @@
         flex-basis: 30vw;
     }
 
+    @media only screen and (max-width: 1300px) and (min-width: 1200px) {
+        margin-left: 6vw;    
+    }
+
     @media only screen and (max-width: 1024px) {
         margin-left: 0;
         margin-top: 10em;

@@ -124,6 +124,10 @@ a.nav-next {
     background: linear-gradient(to left, rgba(black, .2), transparent);
     z-index: 9;
 
+    @media only screen and (max-width: 1300px) and (min-width: 1200px) {
+        width: 5vw;    
+    }
+
     @media only screen and (max-width: 1024px) {
         width: 8vw;
     }
