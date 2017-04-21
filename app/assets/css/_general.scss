@@ -19,26 +19,20 @@
 }
 
 html {
-    min-width: 100vw;
-    min-height: 100vh;
-}
-
-@keyframes bg-position {
-    0% { background-position: -100px 0; }
-    100% { background-position: -1900px 0; }
+    width: 100%;
+    height: 100%;
 }
 
 body {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
     display: block;
     font: #{$font-size}/1.5 $main-font, sans-serif;
     font-weight: normal;
     color: white;
-    background: url('../img/background.jpg') repeat fixed 0 0px;
-    animation: bg-position 15s linear infinite;
-    transform: translateZ(0);
+    background-color: #2D2D2D;
 
     @media only screen and (max-width: 1750px) {
         font-size: #{$font-size * .88};
@@ -75,33 +69,55 @@ body {
     }
 }
 
+$bg-width: 1800px;
 
-// backround overlay
-body:before {
-    content: "";
+.bg {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2D2D2D;
-    opacity: .94;
-    z-index: -1;
+    z-index: 1;
+
+    width: $bg-width;
+    height: 100%;
+    padding-right: 100%;
+    box-sizing: content-box;
+
+    background-image: url('../img/background.jpg');
+    background-size: $bg-width auto;
+    opacity: 0.06;
+
+    font-size: 0;
+    white-space: nowrap;
+
+    animation: bg-scroll 30s linear infinite;
+}
+
+@keyframes bg-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-$bg-width);
+    }
 }
 
 .black-gradient {
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100vh;
-    display: block;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(to top, rgba(black, .8), transparent);
-    z-index: -1;
+    z-index: 2;
 }
 
 #app {
     position: relative;
+    z-index: 3;
     height: 100vh;
     display: block;
     overflow-x: hidden;
