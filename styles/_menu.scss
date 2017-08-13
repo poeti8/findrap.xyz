@@ -1,0 +1,192 @@
+#menu-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba($sec-color, .95);
+    z-index: 9999;
+    @include transition(all .3s ease);
+    transform: translate(100%, -100%) scale(0.2, 0.2);
+    
+    &.active {
+        transform: translate(0, 0) scale(1, 1);
+    }
+    
+    ul {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            padding: 0;
+            margin-bottom: 3em;
+
+            @media only screen and (max-width: 550px) {
+                margin-bottom: 1em;
+            }
+            
+            a {
+                font-weight: 800;
+                font-size: 6em;
+                letter-spacing: -.05em;
+
+                @media only screen and (max-width: 770px) {
+                    font-size: 5em;
+                }
+
+                @media only screen and (max-width: 550px) {
+                    font-size: 4em;
+                }
+                
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+#menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 6em;
+    height: 4em;
+    z-index: 9999;
+
+    @media only screen and (max-width: 1500px) {
+        width: 7em;
+        height: 5em;
+    }
+    
+    a.open {
+        display: block;
+    }
+
+    a.close {
+        display: none;
+    }
+    
+    &.active {
+        a.open {
+            display: none;
+        }
+        
+        a.close {
+            display: block;
+        }
+    }
+    
+    
+    a {
+        font-weight: 800;
+        font-size: .9em;
+        letter-spacing: -.02em;
+        text-transform: uppercase;
+        opacity: .9;
+        @include transition(all .1s $ease);
+        
+        img {
+            box-sizing: content-box;
+            display: inline-block;
+            padding: .5em;
+            height: 1.3em;
+            width: auto;
+            margin-left: .5em;
+            margin-bottom: -1px; 
+        }
+        
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1, 1.1) translate(-.1px, -.1px);
+        }
+    }
+}
+
+a.nav-next {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 8vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(black, .2), transparent);
+    z-index: 9;
+
+    @media only screen and (max-width: 1440px) {
+        width: 5vw;    
+    }
+
+    @media only screen and (max-width: 1300px) and (min-width: 1200px) {
+        width: 5vw;    
+    }
+
+    @media only screen and (max-width: 1024px) {
+        width: 8vw;
+    }
+    
+    img {
+        width: 12%;
+        height: auto;
+        margin-right: 1.5em;
+        opacity: .4;
+        @include transition(all .3s $ease);
+
+        @media only screen and (max-width: 1500px) {
+            width: 14%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            width: 20%;
+        }
+    }
+    
+    &:hover {
+        background: linear-gradient(to left, rgba(black, .8), transparent);
+    }
+    
+    &:hover img {
+        transform: scale(1.1, 1.1);
+        opacity: .8;
+    }
+}
+
+a.nav-prev {
+    @extend a.nav-next;
+    justify-content: flex-start;
+    left: 0;
+    background: linear-gradient(to right, rgba(black, .2), transparent);
+    
+    img {
+        width: 12%;
+        margin: 0 0 0 1.5em;
+        transform: rotate(180deg);
+
+        @media only screen and (max-width: 1500px) {
+            width: 14%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            width: 20%;
+        }
+    }
+    
+    &:hover img {
+        transform: rotate(180deg) scale(1.1, 1.1);
+    }
+    
+    &:hover {
+        background: linear-gradient(to right, rgba(black, .8), transparent);
+    }
+}

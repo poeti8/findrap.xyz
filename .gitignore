@@ -1,5 +1,5 @@
-.vscode
 node_modules
-public/assets/img/albums
-public/assets/img/artists
-public/assets/img/top-10
+.next
+static/albums
+static/artists
+static/top-10

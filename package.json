@@ -5,12 +5,19 @@
   "description": "Discover dope Hip-Hop music",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "webpack --config webpack.config.js -p",
-    "start": "node server.js"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-wrap-in-js": "^1.1.1",
     "express": "~4.14.1",
+    "next": "^3.0.3",
+    "postcss-easy-import": "^2.1.0",
+    "postcss-loader": "^2.0.6",
+    "raw-loader": "^0.5.1",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -26,10 +33,11 @@
     "babel-preset-react": "^6.23.0",
     "compression-webpack-plugin": "^0.4.0",
     "css-loader": "^0.27.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.1.0",
     "file-loader": "^0.10.1",
-    "html-loader": "^0.4.5",
-    "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.3",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "style-loader": "^0.13.2",
     "webpack": "^2.2.1"
   }
