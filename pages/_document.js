@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
 					<title>FindRap. Discover the Best Hip-Hop Songs and Albums</title>
 					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 					<link href="https://fonts.googleapis.com/css?family=Inconsolata:700%7CRaleway:400,800" rel="stylesheet" />
+					<link rel="icon" href="/static/favicon.png" />
 					<style dangerouslySetInnerHTML={{ __html: stylesheet }} />
 				</Head>
 				<body>
