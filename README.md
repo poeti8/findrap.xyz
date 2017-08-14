@@ -2,17 +2,6 @@
 
 If you think an artist is missing or the database is incomplete you can [contribute](https://github.com/poeti8/findrap.xyz/blob/master/README.md#contribute) or [open an issue](https://github.com/poeti8/findrap.xyz/issues).
 
-# Run the App
-
-You need [Node](http://nodejs.org) to run the app. Also, [webpack](https://webpack.github.io) is used to build the project.
-
-Install dependencies and start the server, it runs at port ```8080```.
-```
-npm install       // install dependencies
-npm run build     // build for the production
-npm start         // run the app
-```
-
 # API
 
 You can get FindRap dope albums and songs by requesting data via below URLs. 
